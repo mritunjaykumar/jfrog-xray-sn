@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow gets triggered by Xray violation REST call. It processes the payload and create violation records in the table. Also, for low severity CVEs, it creates ignore rules in the Xray system.</description>
+        <internal_name>jfrog_xray_violations_flow</internal_name>
+        <label_cache>[{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc000d09a3451011058d4c5f1ff2fc74e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"25d51711-105e-46cf-903c-ea09e5ce540b"}},{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"eed2ed63-ff86-4127-b6e1-ee61ca74ba8e"}},{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.violation_records","label":"1➛violation records","reference_display":"violation records","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8961fd63-3626-4996-8cd0-f755317a05b7","child_name":"violation_record","uiUniqueId":"9e2f90f3-25aa-40ce-83fa-99cdefa00506","uiTypeLabel":"Array.Object","co_type_name":"FDc000d09a75510110c15325d201366a50","child_label":"violation record","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"08ed8f86-bbde-441a-9455-63a6b1b94fd2","uiType":"array.object","child_type":"object","child_uiUniqueId":"8ab20945-d53e-4b80-bf53-4e39fa49168f"}},{"name":"REST API - Asynchronous_1.body","label":"Trigger➛Request Body","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDfbf36cd61f9101106f19e7edb8fe7dce","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item","label":"2➛violation record","reference_display":"violation record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"132b85fa-e197-48d0-9108-e0483268c3c2.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDbdd15cdaed5101108cb41e665a041a3c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9b012344-7bbc-4a92-8bba-d285617400a0"}},{"name":"132b85fa-e197-48d0-9108-e0483268c3c2.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f06244d5-e886-4cb6-8fd0-8eb3bf285611"}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.watch_name","label":"2➛violation record➛watch name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.policy_name","label":"2➛violation record➛policy name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.severity","label":"2➛violation record➛severity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.issue_type","label":"2➛violation record➛issue type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.created_on","label":"2➛violation record➛created on","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.summary","label":"2➛violation record➛summary","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.cve","label":"2➛violation record➛cve","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.impacted_artifacts","label":"2➛violation record➛impacted artifacts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf872241abd910110166a30c762851c7c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"2faeccc2-7664-41a6-a9b0-192c1ae73357"}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"077eaaf5-69da-4bf5-a70d-5f7f762ad86e"}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.ignore_rules_resp_status_code","label":"5➛ignore_rules_resp_status_code","reference_display":"ignore_rules_resp_status_code","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a8867b64-39dc-44c6-9a6c-ab9485ba2f41"}}]</label_cache>
+        <master_snapshot>cad66cda2f910110d2dbb6a62799b6c9</master_snapshot>
+        <name>JFrog Xray violations flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>48e6ecda2f910110d2dbb6a62799b66c</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3743681a2f910110d2dbb6a62799b6c9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>JFrog Xray violations flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_hub_flow_3743681a2f910110d2dbb6a62799b6c9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:07</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3743681a2f910110d2dbb6a62799b6c9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3743681a2f910110d2dbb6a62799b6c9"/>
+    <sys_rest_api_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_operation display_value="POST violations">80e6ecda2f910110d2dbb6a62799b63a</api_operation>
+        <name/>
+        <roles_acl/>
+        <sys_class_name>sys_rest_api_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48e6ecda2f910110d2dbb6a62799b66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:06</sys_updated_on>
+    </sys_rest_api_trigger>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN0004285a2f910110d2dbb6a62799b6d4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>0004285a2f910110d2dbb6a62799b6d4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:07</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0004285a2f910110d2dbb6a62799b6d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0004285a2f910110d2dbb6a62799b6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>0404285a2f910110d2dbb6a62799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <value>/api/x_737142_jfrog_x_0/jfrog_xray_violations_flow</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0004285a2f910110d2dbb6a62799b6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>4004285a2f910110d2dbb6a62799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <value>violations</value>
+        <variable display_value="Display Path">6c4bac4373031010fbe7066a4cf6a7f9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0004285a2f910110d2dbb6a62799b6d4</document_key>
+        <order>112</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>8c04285a2f910110d2dbb6a62799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Requires Authentication">2e397f5b0ffe1010b303f140ff767e36</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0004285a2f910110d2dbb6a62799b6d4</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>c404285a2f910110d2dbb6a62799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <value>violations</value>
+        <variable display_value="Path">d33b7bb2c75000101666868cb8c26095</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0004285a2f910110d2dbb6a62799b6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>c804285a2f910110d2dbb6a62799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=0004285a2f910110d2dbb6a62799b6d4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=0004285a2f910110d2dbb6a62799b6d4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN3343681a2f910110d2dbb6a62799b6cc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3743681a2f910110d2dbb6a62799b6c9</id>
+        <name>JFrog Xray violations flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:22:09</sys_created_on>
+        <sys_id>3343681a2f910110d2dbb6a62799b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:22:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN33f3285a2f910110d2dbb6a62799b696,4404285a2f910110d2dbb6a62799b69c,8004285a2f910110d2dbb6a62799b6ae,c404285a2f910110d2dbb6a62799b6b3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDfbf36cd6fd91011022a83b0fa1990bc8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</model>
+        <model_id>3743681a2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:09</sys_created_on>
+        <sys_id>33f3285a2f910110d2dbb6a62799b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD7ff36cd6c59101107afd12ea3f8f41ca,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</model>
+        <model_id>3743681a2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:09</sys_created_on>
+        <sys_id>4404285a2f910110d2dbb6a62799b69c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD3ff36cd671910110b128d34ec141decc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</model>
+        <model_id>3743681a2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>8004285a2f910110d2dbb6a62799b6ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDfbf36cd61f9101106f19e7edb8fe7dce,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</model>
+        <model_id>3743681a2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>c404285a2f910110d2dbb6a62799b6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN4ce560da2f910110d2dbb6a62799b630,cce560da2f910110d2dbb6a62799b668,fbd560da2f910110d2dbb6a62799b625"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray persist violation record">69d15cda2f510110d2dbb6a62799b61e</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>69d15cda2f510110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <order>3</order>
+        <parent_ui_id>c89194ce-6746-44a6-a18c-54309240c052</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>4ce560da2f910110d2dbb6a62799b630</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:51:09</sys_updated_on>
+        <ui_id>132b85fa-e197-48d0-9108-e0483268c3c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ce560da2f910110d2dbb6a62799b630"/>
+    <sys_element_mapping action="delete_multiple" query="id=4ce560da2f910110d2dbb6a62799b630"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation</field>
+        <id>4ce560da2f910110d2dbb6a62799b630</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>40e560da2f910110d2dbb6a62799b632</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_69d15cda2f510110d2dbb6a62799b61e</table>
+        <value>{"version":"1.0","complexObject":{"severity":{"$cv":{"$c":"java.lang.String","$v":""}},"summary":{"$cv":{"$c":"java.lang.String","$v":""}},"watch_name":{"$cv":{"$c":"java.lang.String","$v":""}},"cve":{"$cv":{"$c":"java.lang.String","$v":""}},"created_on":{"$cv":{"$c":"java.lang.String","$v":""}},"issue_type":{"$cv":{"$c":"java.lang.String","$v":""}},"policy_name":{"$cv":{"$c":"java.lang.String","$v":""}},"impacted_artifacts":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD29d15cdaa35101103dc1d88945392221":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"severity\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}\\\"}\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"summary":"String","summary.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"summary\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.summary}}\\\"}\",\"default_value\":\"\",\"label\":\"summary\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"watch_name":"String","watch_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"watch_name\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.watch_name}}\\\"}\",\"default_value\":\"\",\"label\":\"watch name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"cve":"String","cve.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"cve\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.cve}}\\\"}\",\"default_value\":\"\",\"label\":\"cve\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"created_on":"String","created_on.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"created_on\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.created_on}}\\\"}\",\"default_value\":\"\",\"label\":\"created on\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"issue_type":"String","issue_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"issue_type\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.issue_type}}\\\"}\",\"default_value\":\"\",\"label\":\"issue type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"policy_name":"String","policy_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"policy_name\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.policy_name}}\\\"}\",\"default_value\":\"\",\"label\":\"policy name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"impacted_artifacts":"String","impacted_artifacts.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"impacted_artifacts\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.impacted_artifacts}}\\\"}\",\"default_value\":\"\",\"label\":\"impacted artifacts\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"}},"FlowDesigner:FD29d15cdaa35101103dc1d88945392221.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD29d15cdaa35101103dc1d88945392221\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violation\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"dfeb1293-a717-41a6-ae95-359fb74fff02\"}"}}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray Create Ignore Rules">d872241a2f910110d2dbb6a62799b61e</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>d872241a2f910110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <order>5</order>
+        <parent_ui_id>2f712fc3-ee27-4c75-ae8d-e5cfa99247cb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:22</sys_created_on>
+        <sys_id>cce560da2f910110d2dbb6a62799b668</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:51:09</sys_updated_on>
+        <ui_id>4a43f010-ad94-4c13-9dc4-725d6e256a76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cce560da2f910110d2dbb6a62799b668"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cce560da2f910110d2dbb6a62799b668</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:22</sys_created_on>
+        <sys_id>88e560da2f910110d2dbb6a62799b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:22</sys_updated_on>
+        <value>https://partnerenttest.jfrog.io/xray//api/v1/ignore_rules</value>
+        <variable display_value="xray ignore rules url">1472241a2f910110d2dbb6a62799b622</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cce560da2f910110d2dbb6a62799b668"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cve</field>
+        <id>cce560da2f910110d2dbb6a62799b668</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:22</sys_created_on>
+        <sys_id>08e560da2f910110d2dbb6a62799b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value>{{c89194ce-6746-44a6-a18c-54309240c052.item.cve}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>xray_ignore_rules_url</field>
+        <id>cce560da2f910110d2dbb6a62799b668</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:22</sys_created_on>
+        <sys_id>44e560da2f910110d2dbb6a62799b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Jfrog - Create Violation Record">77ffc09a2f510110d2dbb6a62799b629</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>77ffc09a2f510110d2dbb6a62799b629</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>fbd560da2f910110d2dbb6a62799b625</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:51:09</sys_updated_on>
+        <ui_id>4f2e686c-d18d-4ec0-9ca7-64db3ca53d20</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fbd560da2f910110d2dbb6a62799b625"/>
+    <sys_element_mapping action="delete_multiple" query="id=fbd560da2f910110d2dbb6a62799b625"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation_payload</field>
+        <id>fbd560da2f910110d2dbb6a62799b625</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>fbd560da2f910110d2dbb6a62799b627</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77ffc09a2f510110d2dbb6a62799b629</table>
+        <value>{{REST API - Asynchronous_1.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN4ce560da2f910110d2dbb6a62799b632,7fd560da2f910110d2dbb6a62799b628"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">84e560da2f910110d2dbb6a62799b632</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c89194ce-6746-44a6-a18c-54309240c052</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>4ce560da2f910110d2dbb6a62799b632</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:07</sys_updated_on>
+        <ui_id>2f712fc3-ee27-4c75-ae8d-e5cfa99247cb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4ce560da2f910110d2dbb6a62799b632"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4ce560da2f910110d2dbb6a62799b632</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>80e560da2f910110d2dbb6a62799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <value>low-severity-check</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ce560da2f910110d2dbb6a62799b632"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4ce560da2f910110d2dbb6a62799b632</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>00e560da2f910110d2dbb6a62799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=Low^NQ{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=low^NQ{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=LOW</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4ce560da2f910110d2dbb6a62799b632</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>4ce560da2f910110d2dbb6a62799b635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">33d560da2f910110d2dbb6a62799b628</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>7fd560da2f910110d2dbb6a62799b628</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:07</sys_updated_on>
+        <ui_id>c89194ce-6746-44a6-a18c-54309240c052</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7fd560da2f910110d2dbb6a62799b628"/>
+    <sys_element_mapping action="delete_multiple" query="id=7fd560da2f910110d2dbb6a62799b628"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7fd560da2f910110d2dbb6a62799b628</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:33:21</sys_created_on>
+        <sys_id>08e560da2f910110d2dbb6a62799b62c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:33:21</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.violation_records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN0004285a2f910110d2dbb6a62799b6b2,0404285a2f910110d2dbb6a62799b6a0,8404285a2f910110d2dbb6a62799b6b7,8c04285a2f910110d2dbb6a62799b69a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>0004285a2f910110d2dbb6a62799b6b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>0404285a2f910110d2dbb6a62799b6a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:10</sys_created_on>
+        <sys_id>8404285a2f910110d2dbb6a62799b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3743681a2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:25:09</sys_created_on>
+        <sys_id>8c04285a2f910110d2dbb6a62799b69a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:25:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3743681a2f910110d2dbb6a62799b6c9^sys_idNOT IN80e6ecda2f910110d2dbb6a62799b66d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"80e6ecda2f910110d2dbb6a62799b66d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>3743681a2f910110d2dbb6a62799b6c9</plan_id>
+        <snapshot>58f9a8de2f910110d2dbb6a62799b629</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80e6ecda2f910110d2dbb6a62799b66d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:06</sys_updated_on>
+        <trigger display_value="">48e6ecda2f910110d2dbb6a62799b66c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow gets triggered by Xray violation REST call. It processes the payload and create violation records in the table. Also, for low severity CVEs, it creates ignore rules in the Xray system.</description>
+        <internal_name>jfrog_xray_violations_flow</internal_name>
+        <label_cache>[{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc000d09a3451011058d4c5f1ff2fc74e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"25d51711-105e-46cf-903c-ea09e5ce540b"}},{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"eed2ed63-ff86-4127-b6e1-ee61ca74ba8e"}},{"name":"4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.violation_records","label":"1➛violation records","reference_display":"violation records","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8961fd63-3626-4996-8cd0-f755317a05b7","child_name":"violation_record","uiUniqueId":"9e2f90f3-25aa-40ce-83fa-99cdefa00506","uiTypeLabel":"Array.Object","co_type_name":"FDc000d09a75510110c15325d201366a50","child_label":"violation record","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"08ed8f86-bbde-441a-9455-63a6b1b94fd2","uiType":"array.object","child_type":"object","child_uiUniqueId":"8ab20945-d53e-4b80-bf53-4e39fa49168f"}},{"name":"REST API - Asynchronous_1.body","label":"Trigger➛Request Body","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDfbf36cd61f9101106f19e7edb8fe7dce","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item","label":"2➛violation record","reference_display":"violation record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"132b85fa-e197-48d0-9108-e0483268c3c2.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDbdd15cdaed5101108cb41e665a041a3c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9b012344-7bbc-4a92-8bba-d285617400a0"}},{"name":"132b85fa-e197-48d0-9108-e0483268c3c2.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f06244d5-e886-4cb6-8fd0-8eb3bf285611"}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.watch_name","label":"2➛violation record➛watch name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.policy_name","label":"2➛violation record➛policy name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.severity","label":"2➛violation record➛severity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.issue_type","label":"2➛violation record➛issue type","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.created_on","label":"2➛violation record➛created on","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.summary","label":"2➛violation record➛summary","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.cve","label":"2➛violation record➛cve","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"c89194ce-6746-44a6-a18c-54309240c052.item.impacted_artifacts","label":"2➛violation record➛impacted artifacts","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf872241abd910110166a30c762851c7c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"2faeccc2-7664-41a6-a9b0-192c1ae73357"}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"077eaaf5-69da-4bf5-a70d-5f7f762ad86e"}},{"name":"4a43f010-ad94-4c13-9dc4-725d6e256a76.ignore_rules_resp_status_code","label":"5➛ignore_rules_resp_status_code","reference_display":"ignore_rules_resp_status_code","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a8867b64-39dc-44c6-9a6c-ab9485ba2f41"}}]</label_cache>
+        <master>true</master>
+        <name>JFrog Xray violations flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="JFrog Xray violations flow">3743681a2f910110d2dbb6a62799b6c9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cad66cda2f910110d2dbb6a62799b6c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=cad66cda2f910110d2dbb6a62799b6c9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cad66cda2f910110d2dbb6a62799b6c9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT INfed6acda2f910110d2dbb6a62799b656"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>fed6acda2f910110d2dbb6a62799b656</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:06</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fed6acda2f910110d2dbb6a62799b656"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fed6acda2f910110d2dbb6a62799b656</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>36d6acda2f910110d2dbb6a62799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>/api/x_737142_jfrog_x_0/jfrog_xray_violations_flow</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fed6acda2f910110d2dbb6a62799b656</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>3ad6acda2f910110d2dbb6a62799b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>violations</value>
+        <variable display_value="Path">d33b7bb2c75000101666868cb8c26095</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fed6acda2f910110d2dbb6a62799b656</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>72d6acda2f910110d2dbb6a62799b659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>violations</value>
+        <variable display_value="Display Path">6c4bac4373031010fbe7066a4cf6a7f9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fed6acda2f910110d2dbb6a62799b656</document_key>
+        <order>112</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>bed6acda2f910110d2dbb6a62799b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Requires Authentication">2e397f5b0ffe1010b303f140ff767e36</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fed6acda2f910110d2dbb6a62799b656</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>fad6acda2f910110d2dbb6a62799b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=fed6acda2f910110d2dbb6a62799b656"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=fed6acda2f910110d2dbb6a62799b656"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT IN8ed66cda2f910110d2dbb6a62799b6ca"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>cad66cda2f910110d2dbb6a62799b6c9</id>
+        <name>JFrog Xray violations flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:35</sys_created_on>
+        <sys_id>8ed66cda2f910110d2dbb6a62799b6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT IN0ed66cda2f910110d2dbb6a62799b6d3,56d6acda2f910110d2dbb6a62799b615,56d6acda2f910110d2dbb6a62799b61f,d6d6acda2f910110d2dbb6a62799b60b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD8ad66cda449101104a5a2e2de8aaa6cb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</model>
+        <model_id>cad66cda2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>0ed66cda2f910110d2dbb6a62799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD0ad66cda1491011004a1b59b581774cf,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</model>
+        <model_id>cad66cda2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>56d6acda2f910110d2dbb6a62799b615</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDc6d66cda169101106f032502f893b6d1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</model>
+        <model_id>cad66cda2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>56d6acda2f910110d2dbb6a62799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD4ad66cda3e910110babb7c392e241fcd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</model>
+        <model_id>cad66cda2f910110d2dbb6a62799b6c9</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>d6d6acda2f910110d2dbb6a62799b60b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT IN6ed6acda2f910110d2dbb6a62799b642,a6d6acda2f910110d2dbb6a62799b63c,f6d6acda2f910110d2dbb6a62799b655"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray persist violation record">69d15cda2f510110d2dbb6a62799b61e</action_type>
+        <action_type_parent display_value="JFrog Xray persist violation record">0e60989a2f510110d2dbb6a62799b66c</action_type_parent>
+        <comment/>
+        <compiled_snapshot>69d15cda2f510110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <order>3</order>
+        <parent_ui_id>c89194ce-6746-44a6-a18c-54309240c052</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>6ed6acda2f910110d2dbb6a62799b642</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:57</sys_updated_on>
+        <ui_id>132b85fa-e197-48d0-9108-e0483268c3c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6ed6acda2f910110d2dbb6a62799b642"/>
+    <sys_element_mapping action="delete_multiple" query="id=6ed6acda2f910110d2dbb6a62799b642"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation</field>
+        <id>6ed6acda2f910110d2dbb6a62799b642</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>aad6acda2f910110d2dbb6a62799b643</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_69d15cda2f510110d2dbb6a62799b61e</table>
+        <value>{"version":"1.0","complexObject":{"severity":{"$cv":{"$c":"java.lang.String","$v":""}},"summary":{"$cv":{"$c":"java.lang.String","$v":""}},"watch_name":{"$cv":{"$c":"java.lang.String","$v":""}},"cve":{"$cv":{"$c":"java.lang.String","$v":""}},"created_on":{"$cv":{"$c":"java.lang.String","$v":""}},"issue_type":{"$cv":{"$c":"java.lang.String","$v":""}},"policy_name":{"$cv":{"$c":"java.lang.String","$v":""}},"impacted_artifacts":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FD29d15cdaa35101103dc1d88945392221":{"severity":"String","severity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"severity\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}\\\"}\",\"default_value\":\"\",\"label\":\"severity\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"summary":"String","summary.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"summary\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.summary}}\\\"}\",\"default_value\":\"\",\"label\":\"summary\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"watch_name":"String","watch_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"watch_name\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.watch_name}}\\\"}\",\"default_value\":\"\",\"label\":\"watch name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"cve":"String","cve.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"cve\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.cve}}\\\"}\",\"default_value\":\"\",\"label\":\"cve\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\"}"},"created_on":"String","created_on.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"created_on\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.created_on}}\\\"}\",\"default_value\":\"\",\"label\":\"created on\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"issue_type":"String","issue_type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"issue_type\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.issue_type}}\\\"}\",\"default_value\":\"\",\"label\":\"issue type\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"policy_name":"String","policy_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"policy_name\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.policy_name}}\\\"}\",\"default_value\":\"\",\"label\":\"policy name\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"impacted_artifacts":"String","impacted_artifacts.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"impacted_artifacts\\\":\\\"{{c89194ce-6746-44a6-a18c-54309240c052.item.impacted_artifacts}}\\\"}\",\"default_value\":\"\",\"label\":\"impacted artifacts\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"}},"FlowDesigner:FD29d15cdaa35101103dc1d88945392221.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD29d15cdaa35101103dc1d88945392221\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"violation\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"dfeb1293-a717-41a6-ae95-359fb74fff02\"}"}}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Jfrog - Create Violation Record">77ffc09a2f510110d2dbb6a62799b629</action_type>
+        <action_type_parent display_value="Jfrog - Create Violation Record">084d48d62f510110d2dbb6a62799b694</action_type_parent>
+        <comment/>
+        <compiled_snapshot>77ffc09a2f510110d2dbb6a62799b629</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>a6d6acda2f910110d2dbb6a62799b63c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:57</sys_updated_on>
+        <ui_id>4f2e686c-d18d-4ec0-9ca7-64db3ca53d20</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6d6acda2f910110d2dbb6a62799b63c"/>
+    <sys_element_mapping action="delete_multiple" query="id=a6d6acda2f910110d2dbb6a62799b63c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation_payload</field>
+        <id>a6d6acda2f910110d2dbb6a62799b63c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>e2d6acda2f910110d2dbb6a62799b63d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77ffc09a2f510110d2dbb6a62799b629</table>
+        <value>{{REST API - Asynchronous_1.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray Create Ignore Rules">d872241a2f910110d2dbb6a62799b61e</action_type>
+        <action_type_parent display_value="JFrog Xray Create Ignore Rules">3942d49a2f510110d2dbb6a62799b603</action_type_parent>
+        <comment/>
+        <compiled_snapshot>d872241a2f910110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <order>5</order>
+        <parent_ui_id>2f712fc3-ee27-4c75-ae8d-e5cfa99247cb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>f6d6acda2f910110d2dbb6a62799b655</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:58</sys_updated_on>
+        <ui_id>4a43f010-ad94-4c13-9dc4-725d6e256a76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f6d6acda2f910110d2dbb6a62799b655"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f6d6acda2f910110d2dbb6a62799b655</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>fad6acda2f910110d2dbb6a62799b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <value>https://partnerenttest.jfrog.io/xray//api/v1/ignore_rules</value>
+        <variable display_value="xray ignore rules url">1472241a2f910110d2dbb6a62799b622</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f6d6acda2f910110d2dbb6a62799b655"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cve</field>
+        <id>f6d6acda2f910110d2dbb6a62799b655</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>7ad6acda2f910110d2dbb6a62799b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value>{{c89194ce-6746-44a6-a18c-54309240c052.item.cve}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>xray_ignore_rules_url</field>
+        <id>f6d6acda2f910110d2dbb6a62799b655</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:38</sys_created_on>
+        <sys_id>b6d6acda2f910110d2dbb6a62799b656</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT IN12d6acda2f910110d2dbb6a62799b631,16d6acda2f910110d2dbb6a62799b62d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">84e560da2f910110d2dbb6a62799b632</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c89194ce-6746-44a6-a18c-54309240c052</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>12d6acda2f910110d2dbb6a62799b631</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:58</sys_updated_on>
+        <ui_id>2f712fc3-ee27-4c75-ae8d-e5cfa99247cb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=12d6acda2f910110d2dbb6a62799b631"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>12d6acda2f910110d2dbb6a62799b631</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>a2d6acda2f910110d2dbb6a62799b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <value>low-severity-check</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12d6acda2f910110d2dbb6a62799b631"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>12d6acda2f910110d2dbb6a62799b631</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>22d6acda2f910110d2dbb6a62799b634</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=Low^NQ{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=low^NQ{{c89194ce-6746-44a6-a18c-54309240c052.item.severity}}=LOW</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>12d6acda2f910110d2dbb6a62799b631</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>6ed6acda2f910110d2dbb6a62799b633</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">33d560da2f910110d2dbb6a62799b628</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="JFrog Xray violations flow">cad66cda2f910110d2dbb6a62799b6c9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>16d6acda2f910110d2dbb6a62799b62d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:49:57</sys_updated_on>
+        <ui_id>c89194ce-6746-44a6-a18c-54309240c052</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=16d6acda2f910110d2dbb6a62799b62d"/>
+    <sys_element_mapping action="delete_multiple" query="id=16d6acda2f910110d2dbb6a62799b62d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>16d6acda2f910110d2dbb6a62799b62d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>56d6acda2f910110d2dbb6a62799b630</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{4f2e686c-d18d-4ec0-9ca7-64db3ca53d20.violation_records}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9^sys_idNOT IN16d6acda2f910110d2dbb6a62799b611,16d6acda2f910110d2dbb6a62799b61b,16d6acda2f910110d2dbb6a62799b625,96d6acda2f910110d2dbb6a62799b607"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>16d6acda2f910110d2dbb6a62799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>16d6acda2f910110d2dbb6a62799b61b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:37</sys_created_on>
+        <sys_id>16d6acda2f910110d2dbb6a62799b625</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cad66cda2f910110d2dbb6a62799b6c9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:36</sys_created_on>
+        <sys_id>96d6acda2f910110d2dbb6a62799b607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>3743681a2f910110d2dbb6a62799b6c9</sys_id>
+        <latest_snapshot>cad66cda2f910110d2dbb6a62799b6c9</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

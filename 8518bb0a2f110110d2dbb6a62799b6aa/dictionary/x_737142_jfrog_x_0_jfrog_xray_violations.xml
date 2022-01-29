@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="jfrog xray violations" max_length="40" name="x_737142_jfrog_x_0_jfrog_xray_violations" type="collection">
+        <element label="Created on" max_length="40" name="created_on" type="string"/>
+        <element label="CVE" max_length="40" name="cve" type="string"/>
+        <element label="Impacted artifacts" max_length="4000" name="impacted_artifacts" type="string"/>
+        <element label="Issue type" max_length="40" name="issue_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Policy name" max_length="40" name="policy_name" type="string"/>
+        <element label="Severity" max_length="40" name="severity" type="string"/>
+        <element label="Summary" max_length="4000" name="summary" type="string"/>
+        <element label="Watch name" max_length="40" name="watch_name" type="string"/>
+    </element>
+</database>

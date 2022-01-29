@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_response_local">
+    <sys_api_response_local action="DELETE">
+        <api_collection/>
+        <api_operation display_value="POST violations">80e6ecda2f910110d2dbb6a62799b63a</api_operation>
+        <description/>
+        <name>Generated Request for 3743681a2f910110d2dbb6a62799b6c9</name>
+        <status_code>202</status_code>
+        <sys_class_name>sys_api_response_local</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>88e6ecda439101106c1ebb894c9a7b35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>80e6ecda2f910110d2dbb6a62799b63a</sys_name>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_api_response_local_88e6ecda439101106c1ebb894c9a7b35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:44</sys_updated_on>
+    </sys_api_response_local>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</application>
+        <file_path/>
+        <instance_id>ba2f3985db89730407072f17d4961993</instance_id>
+        <instance_name>dev83299</instance_name>
+        <name>sys_api_response_local_88e6ecda439101106c1ebb894c9a7b35</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_response_local"><sys_api_response_local action="INSERT_OR_UPDATE"><api_collection/><api_operation display_value="POST violations">80e6ecda2f910110d2dbb6a62799b63a</api_operation><description/><name>Generated Request for 3743681a2f910110d2dbb6a62799b6c9</name><status_code>202</status_code><sys_class_name>sys_api_response_local</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-29 01:37:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>88e6ecda439101106c1ebb894c9a7b35</sys_id><sys_mod_count>0</sys_mod_count><sys_name>80e6ecda2f910110d2dbb6a62799b63a</sys_name><sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package><sys_policy/><sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope><sys_update_name>sys_api_response_local_88e6ecda439101106c1ebb894c9a7b35</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-29 01:37:44</sys_updated_on></sys_api_response_local></record_update>]]></payload>
+        <payload_hash>-141208900</payload_hash>
+        <record_name>80e6ecda2f910110d2dbb6a62799b63a</record_name>
+        <reverted_from/>
+        <source>8d18bb0a2f110110d2dbb6a62799b6ac</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:44</sys_created_on>
+        <sys_id>cce6ecda2f910110d2dbb6a62799b668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ea37b26c90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:37:44</sys_updated_on>
+        <type>Local API Response</type>
+        <update_guid>08e6ecda09910110e534c5d5321c8e68</update_guid>
+        <update_guid_history>08e6ecda09910110e534c5d5321c8e68:-141208900</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:50:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_api_response_local">sys_api_response_local</sys_db_object>
+        <sys_id>103af30b31584c5f91c0b369e632afc1</sys_id>
+        <sys_metadata>88e6ecda439101106c1ebb894c9a7b35</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>80e6ecda2f910110d2dbb6a62799b63a</sys_name>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_scope_delete display_value="">03017db5537a41e08009141b04113031</sys_scope_delete>
+        <sys_update_name>sys_api_response_local_88e6ecda439101106c1ebb894c9a7b35</sys_update_name>
+        <sys_update_version display_value="sys_api_response_local_88e6ecda439101106c1ebb894c9a7b35">cce6ecda2f910110d2dbb6a62799b668</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
