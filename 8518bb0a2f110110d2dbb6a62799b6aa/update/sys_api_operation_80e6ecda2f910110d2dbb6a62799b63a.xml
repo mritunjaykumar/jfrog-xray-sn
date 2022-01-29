@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_operation">
+    <sys_api_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_collection display_value="Rest trigger for flow id=3743681a2f910110d2dbb6a62799b6c9 - v1">0ce6ecda2f910110d2dbb6a62799b635</api_collection>
+        <api_request display_value="Generated Request for 3743681a2f910110d2dbb6a62799b6c9">45b924de9891011076baee36877312ac</api_request>
+        <api_security_scheme/>
+        <deprecated>false</deprecated>
+        <description/>
+        <execute_asynchronously>true</execute_asynchronously>
+        <execution_record>3743681a2f910110d2dbb6a62799b6c9</execution_record>
+        <execution_type>sys_hub_flow</execution_type>
+        <http_method>post</http_method>
+        <name>POST violations</name>
+        <operation_id/>
+        <origin>flow_designer</origin>
+        <path>violations</path>
+        <sys_class_name>sys_api_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 01:37:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80e6ecda2f910110d2dbb6a62799b63a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>POST violations</sys_name>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_api_operation_80e6ecda2f910110d2dbb6a62799b63a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 01:50:06</sys_updated_on>
+    </sys_api_operation>
+</record_update>
