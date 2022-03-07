@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD325212b8164e4110d63e738ac9c0f1bc</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD325212b8164e4110d63e738ac9c0f1bc":{"componentID":"String","componentID.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"componentID\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f94acdd3-14d8-4a0a-b8d7-5934aae1cf83\"}"}},"FlowDesigner:FD325212b8164e4110d63e738ac9c0f1bc.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD325212b8164e4110d63e738ac9c0f1bc\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"payload\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"65000\",\"uiUniqueId\":\"57ed5c8c-fffb-4f17-bb0b-b4630e42915a\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-03 00:23:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f25212b8874e41109bc4ddb83cbb35bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD325212b8164e4110d63e738ac9c0f1bc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_f25212b8874e41109bc4ddb83cbb35bc</sys_update_name>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-03 00:23:31</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>
