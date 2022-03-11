@@ -1,0 +1,3459 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation>This action creates user</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="User Access">5bfdc607874ec1109bc4ddb83cbb3569</category>
+        <compiler_build>glide-rome-06-23-2021__patch7-02-09-2022_02-23-2022_0935.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action creates user</description>
+        <ih_action>true</ih_action>
+        <internal_name>jfrog_xray_create_user</internal_name>
+        <label_cache>[{"name":"{{action.name}}","label":"action➛name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.email}}","label":"action➛email","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.is_admin}}","label":"action➛is-admin","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].variable}}","label":"step➛Create Payload➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload}}","label":"step➛Create Payload➛user_payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child1}}","label":"step➛Create Payload➛user_payload➛user_payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.is_admin}}","label":"step➛Create Payload➛user_payload➛is_admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child2}}","label":"step➛Create Payload➛user_payload➛user_payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.email}}","label":"step➛Create Payload➛user_payload➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child3}}","label":"step➛Create Payload➛user_payload➛user_payload_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.name}}","label":"step➛Create Payload➛user_payload➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child4}}","label":"step➛Create Payload➛user_payload➛user_payload_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.password}}","label":"step➛Create Payload➛user_payload➛password","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.admin}}","label":"step➛Create Payload➛user_payload➛admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>92592287878ec1109bc4ddb83cbb35e9</master_snapshot>
+        <name>JFrog Xray create user</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:51:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>292e4607874ec1109bc4ddb83cbb350b</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>JFrog Xray create user</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_292e4607874ec1109bc4ddb83cbb350b</sys_update_name>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:34</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=292e4607874ec1109bc4ddb83cbb350b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=292e4607874ec1109bc4ddb83cbb350b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>292e4607874ec1109bc4ddb83cbb350b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>81fe0647874ec1109bc4ddb83cbb3505</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:31:32</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD81fec2471b4ec110c9e829fd584b86f0":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD81fec2471b4ec110c9e829fd584b86f0.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"8a852a0c-b465-40df-8c23-3e1e965b8bca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD81fec2471b4ec110c9e829fd584b86f0\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">c1fec247874ec1109bc4ddb83cbb35f3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>292e4607874ec1109bc4ddb83cbb350b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>cdfe0647874ec1109bc4ddb83cbb3504</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">8dfec247874ec1109bc4ddb83cbb35f9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b^id=292e4607874ec1109bc4ddb83cbb350b"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN15296e47878ec1109bc4ddb83cbb35ef,b0fec247874ec1109bc4ddb83cbb35ce"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</action>
+        <cid>baa5e938-d708-4b13-8db6-16daa7cdccb3</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:26</sys_created_on>
+        <sys_id>15296e47878ec1109bc4ddb83cbb35ef</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=15296e47878ec1109bc4ddb83cbb35ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>0629ae47878ec1109bc4ddb83cbb3532</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:24</sys_updated_on>
+        <value>https://partnerenttest.jfrog.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>0a29ae47878ec1109bc4ddb83cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>edc6989e2f510110d2dbb6a62799b667</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>4229ae47878ec1109bc4ddb83cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>4629ae47878ec1109bc4ddb83cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8229ae47878ec1109bc4ddb83cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8a29ae47878ec1109bc4ddb83cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8e29ae47878ec1109bc4ddb83cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>c629ae47878ec1109bc4ddb83cbb3532</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>ca29ae47878ec1109bc4ddb83cbb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>artifactory/api/users</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>ce29ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15296e47878ec1109bc4ddb83cbb35ef</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:17</sys_created_on>
+        <sys_id>ce592287878ec1109bc4ddb83cbb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:17</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_15296e47878ec1109bc4ddb83cbb35ef^id=15296e47878ec1109bc4ddb83cbb35ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=15296e47878ec1109bc4ddb83cbb35ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8a29ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>c629ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8229ae47878ec1109bc4ddb83cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>0629ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>ca29ae47878ec1109bc4ddb83cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>4e29ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>4229ae47878ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>4629ae47878ec1109bc4ddb83cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>0a29ae47878ec1109bc4ddb83cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:17</sys_created_on>
+        <sys_id>4e592287878ec1109bc4ddb83cbb35a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>8e29ae47878ec1109bc4ddb83cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>15296e47878ec1109bc4ddb83cbb35ef</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:28</sys_created_on>
+        <sys_id>ce29ae47878ec1109bc4ddb83cbb352e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=15296e47878ec1109bc4ddb83cbb35ef^sys_idNOT IN2d29ae47878ec1109bc4ddb83cbb350a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=967b1c01-34d7-402c-9b70-5cab617b6415</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">15296e47878ec1109bc4ddb83cbb35ef</model>
+        <model_id>15296e47878ec1109bc4ddb83cbb35ef</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_15296e47878ec1109bc4ddb83cbb35ef</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:26</sys_created_on>
+        <sys_id>2d29ae47878ec1109bc4ddb83cbb350a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_15296e47878ec1109bc4ddb83cbb35ef^sys_idNOT IN3529ae47878ec1109bc4ddb83cbb3528"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_15296e47878ec1109bc4ddb83cbb35ef</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:49:27</sys_created_on>
+        <sys_id>3529ae47878ec1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:49:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</action>
+        <cid>34778889-396b-404c-9b20-3f465a7f2b25</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Create Payload</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>b0fec247874ec1109bc4ddb83cbb35ce</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b0fec247874ec1109bc4ddb83cbb35ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b0fec247874ec1109bc4ddb83cbb35ce</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>38fec247874ec1109bc4ddb83cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">7cfec247874ec1109bc4ddb83cbb35e2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b0fec247874ec1109bc4ddb83cbb35ce</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>70fec247874ec1109bc4ddb83cbb35ec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  outputs.user_payload = {};
+  outputs.user_payload.admin = inputs.is_admin;
+  outputs.user_payload.email = inputs.email;
+  outputs.user_payload.name = inputs.name;
+  outputs.user_payload.password = inputs.password;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b0fec247874ec1109bc4ddb83cbb35ce</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>b8fec247874ec1109bc4ddb83cbb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b0fec247874ec1109bc4ddb83cbb35ce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>70fec247874ec1109bc4ddb83cbb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>b4fec247874ec1109bc4ddb83cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</table>
+        <value>{{action.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_admin</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>7cfec247874ec1109bc4ddb83cbb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</table>
+        <value>{{action.is_admin}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>30fec247874ec1109bc4ddb83cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</table>
+        <value>{{action.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>password</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>f0fec247874ec1109bc4ddb83cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</table>
+        <value>{{action.password}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>b0fec247874ec1109bc4ddb83cbb35ce</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>38fec247874ec1109bc4ddb83cbb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_b0fec247874ec1109bc4ddb83cbb35ce^id=b0fec247874ec1109bc4ddb83cbb35ce"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=b0fec247874ec1109bc4ddb83cbb35ce"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b0fec247874ec1109bc4ddb83cbb35ce^sys_idNOT IN78fec247874ec1109bc4ddb83cbb35d5,7cfec247874ec1109bc4ddb83cbb35e2,b8fec247874ec1109bc4ddb83cbb35de,f4fec247874ec1109bc4ddb83cbb35da"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">b0fec247874ec1109bc4ddb83cbb35ce</model>
+        <model_id>b0fec247874ec1109bc4ddb83cbb35ce</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>78fec247874ec1109bc4ddb83cbb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>is_admin</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Payload">b0fec247874ec1109bc4ddb83cbb35ce</model>
+        <model_id>b0fec247874ec1109bc4ddb83cbb35ce</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>7cfec247874ec1109bc4ddb83cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">b0fec247874ec1109bc4ddb83cbb35ce</model>
+        <model_id>b0fec247874ec1109bc4ddb83cbb35ce</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>b8fec247874ec1109bc4ddb83cbb35de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">b0fec247874ec1109bc4ddb83cbb35ce</model>
+        <model_id>b0fec247874ec1109bc4ddb83cbb35ce</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:58</sys_created_on>
+        <sys_id>f4fec247874ec1109bc4ddb83cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b0fec247874ec1109bc4ddb83cbb35ce^sys_idNOT IN2fd6a607878ec1109bc4ddb83cbb35e3"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDabd6a607d68ec110f02c466fb7536de1,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=eef8da80-8c6f-4414-9454-f6cebaf07cee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>user_payload</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Payload">b0fec247874ec1109bc4ddb83cbb35ce</model>
+        <model_id>b0fec247874ec1109bc4ddb83cbb35ce</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:39:28</sys_created_on>
+        <sys_id>2fd6a607878ec1109bc4ddb83cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:39:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b0fec247874ec1109bc4ddb83cbb35ce^sys_idNOT INbfd6a607878ec1109bc4ddb83cbb35e8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_payload</element>
+        <help/>
+        <hint/>
+        <label>user_payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b0fec247874ec1109bc4ddb83cbb35ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:39:29</sys_created_on>
+        <sys_id>bfd6a607878ec1109bc4ddb83cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:39:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN08aece07874ec1109bc4ddb83cbb3530,54aece07874ec1109bc4ddb83cbb3536,90aece07874ec1109bc4ddb83cbb353c,c4aece07874ec1109bc4ddb83cbb3527"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=26f18488-3e75-47ff-ad1f-54b32233cdcb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>08aece07874ec1109bc4ddb83cbb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=254d9fbc-bc8e-4b0a-adc5-1f63bed58784</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>54aece07874ec1109bc4ddb83cbb3536</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cd27a7e7-5159-4af3-891a-ec5e406ad475</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>is_admin</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>is-admin</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>90aece07874ec1109bc4ddb83cbb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b3f6f0ca-2362-4658-81c8-44ec27b5510a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:33</sys_created_on>
+        <sys_id>c4aece07874ec1109bc4ddb83cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN8dfec247874ec1109bc4ddb83cbb35f9,c1fec247874ec1109bc4ddb83cbb35f3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a13d5b75-c28f-40b0-a6b4-488a7051013c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>8dfec247874ec1109bc4ddb83cbb35f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD81fec2471b4ec110c9e829fd584b86f0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=8a852a0c-b465-40df-8c23-3e1e965b8bca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</model>
+        <model_id>292e4607874ec1109bc4ddb83cbb350b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>c1fec247874ec1109bc4ddb83cbb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN1caece07874ec1109bc4ddb83cbb3551"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</action_type_id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>1caece07874ec1109bc4ddb83cbb3551</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN10aece07874ec1109bc4ddb83cbb354d,1caece07874ec1109bc4ddb83cbb353a,8caece07874ec1109bc4ddb83cbb352e,dcaece07874ec1109bc4ddb83cbb3534"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>is_admin</element>
+        <help/>
+        <hint/>
+        <label>is-admin</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>10aece07874ec1109bc4ddb83cbb354d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email</element>
+        <help/>
+        <hint/>
+        <label>email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>1caece07874ec1109bc4ddb83cbb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>8caece07874ec1109bc4ddb83cbb352e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:53:34</sys_created_on>
+        <sys_id>dcaece07874ec1109bc4ddb83cbb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:53:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b^sys_idNOT IN09fec247874ec1109bc4ddb83cbb35f8,c9fe0647874ec1109bc4ddb83cbb3501"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>09fec247874ec1109bc4ddb83cbb35f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_292e4607874ec1109bc4ddb83cbb350b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-09 23:54:59</sys_created_on>
+        <sys_id>c9fe0647874ec1109bc4ddb83cbb3501</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-09 23:54:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=292e4607874ec1109bc4ddb83cbb350b^sys_idNOT INe759a287878ec1109bc4ddb83cbb351e"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e759a287878ec1109bc4ddb83cbb351e","name":"plan","plan_signature":null}}</plan>
+        <snapshot>709afe4387cec1109bc4ddb83cbb3574</snapshot>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e759a287878ec1109bc4ddb83cbb351e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:37</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation>This action creates user</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="User Access">5bfdc607874ec1109bc4ddb83cbb3569</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action creates user</description>
+        <internal_name>jfrog_xray_create_user</internal_name>
+        <label_cache>[{"name":"{{action.name}}","label":"action➛name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.email}}","label":"action➛email","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.is_admin}}","label":"action➛is-admin","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].variable}}","label":"step➛Create Payload➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload}}","label":"step➛Create Payload➛user_payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child1}}","label":"step➛Create Payload➛user_payload➛user_payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.is_admin}}","label":"step➛Create Payload➛user_payload➛is_admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child2}}","label":"step➛Create Payload➛user_payload➛user_payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.email}}","label":"step➛Create Payload➛user_payload➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child3}}","label":"step➛Create Payload➛user_payload➛user_payload_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.name}}","label":"step➛Create Payload➛user_payload➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child4}}","label":"step➛Create Payload➛user_payload➛user_payload_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.password}}","label":"step➛Create Payload➛user_payload➛password","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.admin}}","label":"step➛Create Payload➛user_payload➛admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>JFrog Xray create user</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="JFrog Xray create user">292e4607874ec1109bc4ddb83cbb350b</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92592287878ec1109bc4ddb83cbb35e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:33</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=92592287878ec1109bc4ddb83cbb35e9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=92592287878ec1109bc4ddb83cbb35e9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>92592287878ec1109bc4ddb83cbb35e9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>b2596287878ec1109bc4ddb83cbb355a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD6e596287328ec11077e8bb15b7f14947":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD6e596287328ec11077e8bb15b7f14947.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"8a852a0c-b465-40df-8c23-3e1e965b8bca\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6e596287328ec11077e8bb15b7f14947\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">ae596287878ec1109bc4ddb83cbb3549</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>92592287878ec1109bc4ddb83cbb35e9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>fe596287878ec1109bc4ddb83cbb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">7e596287878ec1109bc4ddb83cbb354f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9^id=92592287878ec1109bc4ddb83cbb35e9"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=92592287878ec1109bc4ddb83cbb35e9^sys_idNOT IN26596287878ec1109bc4ddb83cbb352d,d6596287878ec1109bc4ddb83cbb3504"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</action>
+        <cid>baa5e938-d708-4b13-8db6-16daa7cdccb3</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>26596287878ec1109bc4ddb83cbb352d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:34</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=26596287878ec1109bc4ddb83cbb352d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>22596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>2a596287878ec1109bc4ddb83cbb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>2e596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>66596287878ec1109bc4ddb83cbb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>6a596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Accept","value":"application/json"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>6e596287878ec1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>a2596287878ec1109bc4ddb83cbb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>a6596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>artifactory/api/users</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>aa596287878ec1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>e2596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <value>edc6989e2f510110d2dbb6a62799b667</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>26596287878ec1109bc4ddb83cbb352d</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>ee596287878ec1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:34</sys_updated_on>
+        <value>https://partnerenttest.jfrog.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_26596287878ec1109bc4ddb83cbb352d^id=26596287878ec1109bc4ddb83cbb352d"/>
+    <sys_element_mapping action="delete_multiple" query="id=26596287878ec1109bc4ddb83cbb352d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>a2596287878ec1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>ee596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>aa596287878ec1109bc4ddb83cbb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>2e596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>e2596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>2a596287878ec1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>6a596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>6e596287878ec1109bc4ddb83cbb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>22596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>66596287878ec1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>a6596287878ec1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>26596287878ec1109bc4ddb83cbb352d</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>e6596287878ec1109bc4ddb83cbb353f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=26596287878ec1109bc4ddb83cbb352d^sys_idNOT IN26596287878ec1109bc4ddb83cbb3534"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=967b1c01-34d7-402c-9b70-5cab617b6415</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">26596287878ec1109bc4ddb83cbb352d</model>
+        <model_id>26596287878ec1109bc4ddb83cbb352d</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_26596287878ec1109bc4ddb83cbb352d</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>26596287878ec1109bc4ddb83cbb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_26596287878ec1109bc4ddb83cbb352d^sys_idNOT IN22596287878ec1109bc4ddb83cbb3539"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_26596287878ec1109bc4ddb83cbb352d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>22596287878ec1109bc4ddb83cbb3539</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</action>
+        <cid>34778889-396b-404c-9b20-3f465a7f2b25</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Create Payload</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>d6596287878ec1109bc4ddb83cbb3504</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:34</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d6596287878ec1109bc4ddb83cbb3504"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6596287878ec1109bc4ddb83cbb3504</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>62596287878ec1109bc4ddb83cbb3529</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 03:05:34</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  outputs.user_payload = {};
+  outputs.user_payload.admin = inputs.is_admin;
+  outputs.user_payload.email = inputs.email;
+  outputs.user_payload.name = inputs.name;
+  outputs.user_payload.password = inputs.password;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6596287878ec1109bc4ddb83cbb3504</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>a6596287878ec1109bc4ddb83cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="is_admin">26596287878ec1109bc4ddb83cbb3518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d6596287878ec1109bc4ddb83cbb3504</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>ae596287878ec1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d6596287878ec1109bc4ddb83cbb3504"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>6a596287878ec1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>26596287878ec1109bc4ddb83cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</table>
+        <value>{{action.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_admin</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>ea596287878ec1109bc4ddb83cbb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</table>
+        <value>{{action.is_admin}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>ae596287878ec1109bc4ddb83cbb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</table>
+        <value>{{action.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>password</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>62596287878ec1109bc4ddb83cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</table>
+        <value>{{action.password}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>d6596287878ec1109bc4ddb83cbb3504</id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>2e596287878ec1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d6596287878ec1109bc4ddb83cbb3504^id=d6596287878ec1109bc4ddb83cbb3504"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d6596287878ec1109bc4ddb83cbb3504"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d6596287878ec1109bc4ddb83cbb3504^sys_idNOT IN26596287878ec1109bc4ddb83cbb3518,9a596287878ec1109bc4ddb83cbb350d,da596287878ec1109bc4ddb83cbb3507,ee596287878ec1109bc4ddb83cbb3512"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>is_admin</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>is_admin</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Payload">d6596287878ec1109bc4ddb83cbb3504</model>
+        <model_id>d6596287878ec1109bc4ddb83cbb3504</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>26596287878ec1109bc4ddb83cbb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">d6596287878ec1109bc4ddb83cbb3504</model>
+        <model_id>d6596287878ec1109bc4ddb83cbb3504</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>9a596287878ec1109bc4ddb83cbb350d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">d6596287878ec1109bc4ddb83cbb3504</model>
+        <model_id>d6596287878ec1109bc4ddb83cbb3504</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>da596287878ec1109bc4ddb83cbb3507</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Payload">d6596287878ec1109bc4ddb83cbb3504</model>
+        <model_id>d6596287878ec1109bc4ddb83cbb3504</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d6596287878ec1109bc4ddb83cbb3504</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>ee596287878ec1109bc4ddb83cbb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d6596287878ec1109bc4ddb83cbb3504^sys_idNOT IN2e596287878ec1109bc4ddb83cbb351f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD2e5962872e8ec110f26e34e12e773d1d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=eef8da80-8c6f-4414-9454-f6cebaf07cee</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user_payload</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>user_payload</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Payload">d6596287878ec1109bc4ddb83cbb3504</model>
+        <model_id>d6596287878ec1109bc4ddb83cbb3504</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d6596287878ec1109bc4ddb83cbb3504</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>2e596287878ec1109bc4ddb83cbb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d6596287878ec1109bc4ddb83cbb3504^sys_idNOT INe6596287878ec1109bc4ddb83cbb3524"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user_payload</element>
+        <help/>
+        <hint/>
+        <label>user_payload</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d6596287878ec1109bc4ddb83cbb3504</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:19</sys_created_on>
+        <sys_id>e6596287878ec1109bc4ddb83cbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=92592287878ec1109bc4ddb83cbb35e9^sys_idNOT IN16592287878ec1109bc4ddb83cbb35f8,1e592287878ec1109bc4ddb83cbb35ec,9a592287878ec1109bc4ddb83cbb35fd,9e592287878ec1109bc4ddb83cbb35f2"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=254d9fbc-bc8e-4b0a-adc5-1f63bed58784</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>email</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>16592287878ec1109bc4ddb83cbb35f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b3f6f0ca-2362-4658-81c8-44ec27b5510a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>1e592287878ec1109bc4ddb83cbb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=cd27a7e7-5159-4af3-891a-ec5e406ad475</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>is_admin</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>is-admin</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>9a592287878ec1109bc4ddb83cbb35fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=26f18488-3e75-47ff-ad1f-54b32233cdcb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>password</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>password</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>9e592287878ec1109bc4ddb83cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=92592287878ec1109bc4ddb83cbb35e9^sys_idNOT IN7e596287878ec1109bc4ddb83cbb354f,ae596287878ec1109bc4ddb83cbb3549"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a13d5b75-c28f-40b0-a6b4-488a7051013c,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>7e596287878ec1109bc4ddb83cbb354f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD6e596287328ec11077e8bb15b7f14947,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=8a852a0c-b465-40df-8c23-3e1e965b8bca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</model>
+        <model_id>92592287878ec1109bc4ddb83cbb35e9</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>ae596287878ec1109bc4ddb83cbb3549</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=92592287878ec1109bc4ddb83cbb35e9^sys_idNOT IN7e596287878ec1109bc4ddb83cbb355b"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="JFrog Xray create user">92592287878ec1109bc4ddb83cbb35e9</action_type_id>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>7e596287878ec1109bc4ddb83cbb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9^sys_idNOT IN52592287878ec1109bc4ddb83cbb35f7,5e596287878ec1109bc4ddb83cbb3501,d6592287878ec1109bc4ddb83cbb35fc,da592287878ec1109bc4ddb83cbb35f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>password</element>
+        <help/>
+        <hint/>
+        <label>password</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>52592287878ec1109bc4ddb83cbb35f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>is_admin</element>
+        <help/>
+        <hint/>
+        <label>is-admin</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>5e596287878ec1109bc4ddb83cbb3501</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email</element>
+        <help/>
+        <hint/>
+        <label>email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>d6592287878ec1109bc4ddb83cbb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:18</sys_created_on>
+        <sys_id>da592287878ec1109bc4ddb83cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9^sys_idNOT INaa596287878ec1109bc4ddb83cbb354e,be596287878ec1109bc4ddb83cbb3556"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>aa596287878ec1109bc4ddb83cbb354e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_92592287878ec1109bc4ddb83cbb35e9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 01:50:20</sys_created_on>
+        <sys_id>be596287878ec1109bc4ddb83cbb3556</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 01:50:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>292e4607874ec1109bc4ddb83cbb350b</sys_id>
+        <latest_snapshot>92592287878ec1109bc4ddb83cbb35e9</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

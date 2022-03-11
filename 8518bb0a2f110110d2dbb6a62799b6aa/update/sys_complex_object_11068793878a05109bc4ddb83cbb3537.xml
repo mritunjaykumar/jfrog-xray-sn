@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5d068793f78a051060729313748de136</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD5d068793f78a051060729313748de136":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD5d068793f78a051060729313748de136.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"groups\",\"mandatory\":\"false\",\"child_name\":\"group\",\"uiUniqueId\":\"a048ba7b-6834-4d4b-b053-948378fc26e8\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD5d068793f78a051060729313748de136\",\"child_label\":\"group\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"15\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cc5d2b43-c208-41d5-92d8-09dae7b5fa1c\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-03-10 22:34:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11068793878a05109bc4ddb83cbb3537</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5d068793f78a051060729313748de136</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_11068793878a05109bc4ddb83cbb3537</sys_update_name>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-03-10 22:34:04</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
