@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD94fd594d07d2c510f772a8acb8d421cb</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD94fd594d07d2c510f772a8acb8d421cb":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD94fd594d07d2c510f772a8acb8d421cb.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Build Names\",\"mandatory\":\"false\",\"child_name\":\"Name\",\"uiUniqueId\":\"18f37f6a-5927-4ca3-a9f3-d197cc57bbb9\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD94fd594d07d2c510f772a8acb8d421cb\",\"child_label\":\"Name\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"Enter the build names you wish to generate a report on.\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"fb94b376-2eb4-4ed9-af07-9e5038c4d266\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>58fd594d87d2c510548899b73cbb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD94fd594d07d2c510f772a8acb8d421cb</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_58fd594d87d2c510548899b73cbb35cb</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:43</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

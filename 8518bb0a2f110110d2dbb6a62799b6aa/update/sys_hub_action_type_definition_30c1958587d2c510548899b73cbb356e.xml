@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Generate a violation report. </annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Xray">b20124ef874e05109bc4ddb83cbb3566</category>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This action will generate a violation report and store it in Xray. </description>
+        <ih_action>false</ih_action>
+        <internal_name>generate_violation_report</internal_name>
+        <label_cache>[{"name":"{{action.ignore_rule_id}}","label":"action➛ignore_rule_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.name}}","label":"action➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_obj}}","label":"action➛xray obj","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_obj.created}}","label":"action➛xray obj➛created","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_obj.policy_name}}","label":"action➛xray obj➛policy_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation}}","label":"action➛violation","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_watch_records}}","label":"action➛xray policy name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"records","uiUniqueId":"d08d0487-0907-4453-b708-be422e1368ca"}},{"name":"{{action.xray_policy_name}}","label":"action➛xray policy name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.created}}","label":"action➛violation➛created","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.top_severity}}","label":"action➛violation➛top severity","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.watch_name}}","label":"action➛violation➛watch name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.policy_name}}","label":"action➛violation➛policy name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.issues}}","label":"action➛violation➛issues","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.severity}}","label":"action➛violation➛severity","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.type}}","label":"action➛violation➛type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.issue_type}}","label":"action➛violation➛issue type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.created_ob}}","label":"action➛violation➛created ob","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.created_on}}","label":"action➛violation➛created on","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.summary}}","label":"action➛violation➛summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.impacted_artifacts}}","label":"action➛violation➛impacted artifacts","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation.cve}}","label":"action➛violation➛cve","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"string","uiUniqueId":"66b1e865-7f0d-40fa-a7eb-bea5354da83f"}},{"name":"{{action.violation_payload}}","label":"action➛violation_payload","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDa67e60518ad101106a483ebb12f1fe3e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"a0507918-5a10-4b58-8d9a-88a93b7e75af"}},{"name":"{{action.violation_payload.watch_name}}","label":"action➛violation_payload➛watch_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"c273c6ff-68ab-4d9e-a0eb-7e80bbddd970"}},{"name":"{{action.violation_payload.policy_name}}","label":"action➛violation_payload➛policy_name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"dd09a81e-9298-4184-aa0d-c39681746a00"}},{"name":"{{action.violation_payload.issues}}","label":"action➛violation_payload➛issues","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue}}","label":"action➛violation_payload➛issues➛issue","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.severity}}","label":"action➛violation_payload➛issues➛issue➛severity","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"33262dd9-34c0-445a-86f5-51f731f66a55"}},{"name":"{{action.violation_payload.issues.issue.issue_type}}","label":"action➛violation_payload➛issues➛issue➛type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.created_on}}","label":"action➛violation_payload➛issues➛issue➛created_on","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"2652b7e6-ae81-4b62-9eae-500d604e6fbe"}},{"name":"{{action.violation_payload.issues.issue.summary}}","label":"action➛violation_payload➛issues➛issue➛summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"e5038d88-c33d-4744-9728-37d8ac81d5b5"}},{"name":"{{action.violation_payload.issues.issue.impacted_artifacts}}","label":"action➛violation_payload➛issues➛issue➛impacted_artifacts","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.impacted_artifacts.impacted_artifact}}","label":"action➛violation_payload➛issues➛issue➛impacted_artifacts➛impacted_artifact","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.impacted_artifacts.impacted_artifact.path}}","label":"action➛violation_payload➛issues➛issue➛impacted_artifacts➛impacted_artifact➛path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.cve}}","label":"action➛violation_payload➛issues➛issue➛cve","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"1a82604c-1dc6-4f0b-a205-1af470b3705f"}},{"name":"{{action.violation_payload.issues.issue.type}}","label":"action➛violation_payload➛issues➛issue➛type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.violation_payload.issues.issue.created}}","label":"action➛violation_payload➛issues➛issue➛created","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.component_id}}","label":"action➛component_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_watch}}","label":"action➛xray watch","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.xray_ignore_rules_url}}","label":"action➛xray ignore rules url","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.cve}}","label":"action➛cve","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_name}}","label":"action➛policy-name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.rule_name}}","label":"action➛rule-name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.webhook_name}}","label":"action➛webhook-name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.policy_type}}","label":"action➛policy-type","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.rule_priority}}","label":"action➛rule-priority","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.rule_min_severity}}","label":"action➛rule-min-severity","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.email}}","label":"action➛email","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.is_admin}}","label":"action➛is-admin","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.description}}","label":"action➛description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.webhook_url}}","label":"action➛webhook-url","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.headers}}","label":"action➛headers","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.file_name}}","label":"action➛File Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.format}}","label":"action➛Format","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"PDF","value":"pdf","order":0},{"label":"JSON","value":"json","order":1},{"label":"CSV","value":"csv","order":2}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"e6231f4d-7343-45f9-8ea1-f733da866751"}},{"name":"{{action.id}}","label":"action➛Report ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories}}","label":"action➛Repositories","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.String","co_type_name":"","child_label":"Repositories_child0","child_type_label":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.string","child_type":"string","child_name":"Repositories_child0","child_uiUniqueId":"30ca730b-39be-4240-b842-7bdfe81b3612","uiUniqueId":"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545"}},{"name":"{{action.repositories.Repository.Repository_Name}}","label":"action➛Repositories➛Repository➛Repository Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository}}","label":"action➛Repositories➛Repository","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.Include_Path_Patterns}}","label":"action➛Repositories➛Repository➛Include Path Patterns","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.include_path_patterns}}","label":"action➛Repositories➛Repository➛Include Path Patterns","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.Exclude_Path_Patterns}}","label":"action➛Repositories➛Repository➛Exclude Path Patterns","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.exclude_path_patterns}}","label":"action➛Repositories➛Repository➛Exclude Path Patterns","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.exclude_path_patterns.Path}}","label":"action➛Repositories➛Repository➛Exclude Path Patterns➛Path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.include_path_patterns.Path}}","label":"action➛Repositories➛Repository➛Include Path Patterns➛Path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.include_path_patterns.path}}","label":"action➛Repositories➛Repository➛Include Path Patterns➛Path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.repositories.Repository.exclude_path_patterns.path}}","label":"action➛Repositories➛Repository➛Exclude Path Patterns➛Path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.builds}}","label":"action➛Builds","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.builds.names}}","label":"action➛Builds➛names","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.builds.names.name1}}","label":"action➛Builds➛names➛name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.builds.names.name}}","label":"action➛Builds➛names➛name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.build_names}}","label":"action➛Build Names","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.build_names.Name}}","label":"action➛Build Names➛Name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.builds_include_paths}}","label":"action➛Builds Include Paths","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.Builds_Include_Patterns.include_path}}","label":"action➛Builds Include Patterns➛include_path","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.Builds_Include_Patterns}}","label":"action➛Builds Include Patterns","type":"action","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.Builds_Include_Patterns.include_pattern}}","label":"action➛Builds Include Patterns➛include_pattern","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[58885434-e609-45b9-9d56-d46915bdc108].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].name}}","label":"step➛Script step➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].email}}","label":"step➛Script step➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users}}","label":"step➛Script step➛users","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user}}","label":"step➛Script step➛users➛user","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child1}}","label":"step➛Script step➛users➛user➛user_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.name}}","label":"step➛Script step➛users➛user➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child2}}","label":"step➛Script step➛users➛user➛user_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.email}}","label":"step➛Script step➛users➛user➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child3}}","label":"step➛Script step➛users➛user➛user_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.admin}}","label":"step➛Script step➛users➛user➛admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child4}}","label":"step➛Script step➛users➛user➛user_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.policyManager}}","label":"step➛Script step➛users➛user➛policyManager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child5}}","label":"step➛Script step➛users➛user➛user_child5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user._}}","label":"step➛Script step➛users➛user","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.watchManager}}","label":"step➛Script step➛users➛user➛watchManager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child6}}","label":"step➛Script step➛users➛user➛user_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.reportsManager}}","label":"step➛Script step➛users➛user➛reportsManager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child7}}","label":"step➛Script step➛users➛user➛user_child7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.groupAdmin}}","label":"step➛Script step➛users➛user➛groupAdmin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child8}}","label":"step➛Script step➛users➛user➛user_child8","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.profileUpdatable}}","label":"step➛Script step➛users➛user➛profileUpdatable","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child9}}","label":"step➛Script step➛users➛user➛user_child9","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.internalPasswordDisabled}}","label":"step➛Script step➛users➛user➛internalPasswordDisabled","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.groups}}","label":"step➛Script step➛users➛user➛groups","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.groups.group}}","label":"step➛Script step➛users➛user➛groups➛group","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child11}}","label":"step➛Script step➛users➛user➛user_child11","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.lastLoggedIn}}","label":"step➛Script step➛users➛user➛lastLoggedIn","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child12}}","label":"step➛Script step➛users➛user➛user_child12","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.lastLoggedInMillis}}","label":"step➛Script step➛users➛user➛lastLoggedInMillis","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child13}}","label":"step➛Script step➛users➛user➛user_child13","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.status}}","label":"step➛Script step➛users➛user➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child14}}","label":"step➛Script step➛users➛user➛user_child14","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.credentialsExpired}}","label":"step➛Script step➛users➛user➛credentialsExpired","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.user_child15}}","label":"step➛Script step➛users➛user➛user_child15","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users.user.numberOfGroups}}","label":"step➛Script step➛users➛user➛numberOfGroups","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[e6273ec2-b96f-43b8-97e4-fc625a73fe20].users_list}}","label":"step➛Script step➛users_list","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[28877204-8348-4ab2-b866-b5508fd57e51].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].name}}","label":"step➛Script step➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].email}}","label":"step➛Script step➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].admin}}","label":"step➛Script step➛admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].policymanager}}","label":"step➛Script step➛policy-manager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"8a86e134-0bf2-4c75-b294-b79055e5ca44"}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].watchmanager}}","label":"step➛Script step➛watchManager","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].policy_manager}}","label":"step➛Script step➛policy_manager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].watch_manager}}","label":"step➛Script step➛watch_manager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].reports_manager}}","label":"step➛Script step➛reports_manager","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].group_admin}}","label":"step➛Script step➛group_admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].profile_updatable}}","label":"step➛Script step➛profile_updatable","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].internal_password_disabled}}","label":"step➛Script step➛internal_password_disabled","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].last_logged_in}}","label":"step➛Script step➛last_logged_in","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].last_logged_in_millis}}","label":"step➛Script step➛last_logged_in_millis","type":"step","ref":"","reference_display":"","base_type":"longint","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].status}}","label":"step➛Script step➛status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].credentials_expired}}","label":"step➛Script step➛credentials_expired","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].number_of_groups}}","label":"step➛Script step➛number_of_groups","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].groups}}","label":"step➛Script step➛groups","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ce50bd6a-590d-4f51-b3d3-5836cdb82a8e].groups.group}}","label":"step➛Script step➛groups➛group","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[21e828aa-85cb-46ca-8c79-d5b164a2d886].record}}","label":"step➛Create Record step➛mrit test table Record","type":"step","ref":"x_737142_mrit2_s_0_mrit_test_table","reference_display":"","base_type":"document_id","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[21e828aa-85cb-46ca-8c79-d5b164a2d886].record.policy_name}}","label":"step➛Create Record step➛mrit test table Record➛Policy name","type":"step","ref":"","reference_display":"Policy name","base_type":"string","parent_table_name":"x_737142_mrit2_s_0_mrit_test_table","column_name":"policy_name","choices":null,"attributes":{}},{"name":"{{step[c2b4599f-2390-4d85-a235-39b8d8d39e52].records}}","label":"step➛Look Up Records step➛mrit test table records","type":"step","ref":"","reference_display":"","base_type":"records","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records}}","label":"step➛Script step➛violation_records","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb5efd0196d910110606f44302f481219","child_label":"violation record","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"violation_record","child_uiUniqueId":"20a1a656-28b5-4e8d-9e7b-8d2be8ef4bb0","uiUniqueId":"f6353829-2fc5-4d21-8976-3482ccf8f31c"}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record}}","label":"step➛Script step➛violation_records➛violation record","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child1}}","label":"step➛Script step➛violation_records➛violation record➛severity➛violation record_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.severity}}","label":"step➛Script step➛violation_records➛violation record➛severity","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_records_child1}}","label":"step➛Script step➛violation_records➛violation records_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.path}}","label":"step➛Script step➛violation records","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.severity}}","label":"step➛Script step➛violation_records➛severity","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child2}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.impacted_artifacts}}","label":"step➛Script step➛violation_records➛violation record➛impacted_artifacts","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.watch_name}}","label":"step➛Script step➛violation_records➛violation record➛watch name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.policy_name}}","label":"step➛Script step➛violation_records➛violation record➛policy name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child4}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.issue_type}}","label":"step➛Script step➛violation_records➛violation record➛issue type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child5}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.created_on}}","label":"step➛Script step➛violation_records➛violation record➛created on","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child6}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.summary}}","label":"step➛Script step➛violation_records➛violation record➛summary","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child7}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.violation_record_child7cve}}","label":"step➛Script step➛violation_records➛violation record➛violation record_child7cve","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[ab4b70df-cbbd-4b10-9cb4-49097262b104].violation_records.violation_record.cve}}","label":"step➛Script step➛violation_records➛violation record➛cve","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[fc9a1b61-066c-4d14-9169-91543300696b].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fc9a1b61-066c-4d14-9169-91543300696b].payload}}","label":"step➛Script step➛payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[fc9a1b61-066c-4d14-9169-91543300696b].payload.payload_child1}}","label":"step➛Script step➛payload➛payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[fc9a1b61-066c-4d14-9169-91543300696b].payload.componentID}}","label":"step➛Script step➛payload➛componentID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records}}","label":"step➛Script step➛violation records","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record}}","label":"step➛Script step➛violation records➛violation record","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child1}}","label":"step➛Script step➛violation records➛violation record➛violation record_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.watch_name}}","label":"step➛Script step➛violation records➛violation record➛watch name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child2}}","label":"step➛Script step➛violation records➛violation record➛violation record_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.policy_name}}","label":"step➛Script step➛violation records➛violation record➛policy name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child3}}","label":"step➛Script step➛violation records➛violation record➛violation record_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.severity}}","label":"step➛Script step➛violation records➛violation record➛severity","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child4}}","label":"step➛Script step➛violation records➛violation record➛violation record_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.issue_type}}","label":"step➛Script step➛violation records➛violation record➛issue type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child5}}","label":"step➛Script step➛violation records➛violation record➛violation record_child5","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.created_on}}","label":"step➛Script step➛violation records➛violation record➛created on","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child6}}","label":"step➛Script step➛violation records➛violation record➛violation record_child6","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.summary}}","label":"step➛Script step➛violation records➛violation record➛summary","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child7}}","label":"step➛Script step➛violation records➛violation record➛violation record_child7","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.cve}}","label":"step➛Script step➛violation records➛violation record➛cve","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.violation_record_child8}}","label":"step➛Script step➛violation records➛violation record➛violation record_child8","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8961fd63-3626-4996-8cd0-f755317a05b7].violation_records.violation_record.impacted_artifacts}}","label":"step➛Script step➛violation records➛violation record➛impacted artifacts","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[107625a8-e9fc-490f-a674-4b9b4f52cb8e].records}}","label":"step➛Look Up Records step➛mrit test table records","type":"step","ref":"","reference_display":"","base_type":"records","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload}}","label":"step➛Script step➛payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.payload_child1}}","label":"step➛Script step➛payload➛payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.notes}}","label":"step➛Script step➛payload➛notes","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.payload_child2}}","label":"step➛Script step➛payload➛payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.expires_at}}","label":"step➛Script step➛payload➛expires_at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.payload_child3}}","label":"step➛Script step➛payload➛payload_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.ignore_filters}}","label":"step➛Script step➛payload➛ignore_filters","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.ignore_filters.ignore_filters_child1}}","label":"step➛Script step➛payload➛ignore_filters➛ignore_filters_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.ignore_filters.cves}}","label":"step➛Script step➛payload➛ignore_filters➛cves","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].payload.ignore_filters.cves.cve}}","label":"step➛Script step➛payload➛ignore_filters➛cves➛cve","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[eaaf3516-fb0b-4fae-885f-1a3228d8b0ec].url}}","label":"step➛Script step➛url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2af3eeeb-a463-4304-93f7-1dc6ef164fa4].status_code}}","label":"step➛make REST call to ignore rules endpoint➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload}}","label":"step➛Script step➛payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.payload_child1}}","label":"step➛Script step➛payload➛payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.notes}}","label":"step➛Script step➛payload➛notes","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.payload_child2}}","label":"step➛Script step➛payload➛payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.expires_at}}","label":"step➛Script step➛payload➛expires at","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.payload_child3}}","label":"step➛Script step➛payload➛payload_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.ignore_filters}}","label":"step➛Script step➛payload➛ignore filters","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.ignore_filters.ignore_filters_child1}}","label":"step➛Script step➛payload➛ignore filters➛ignore filters_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.ignore_filters.cves}}","label":"step➛Script step➛payload➛ignore filters➛cves","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].payload.ignore_filters.cves.cve}}","label":"step➛Script step➛payload➛ignore filters➛cves➛cve","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2ef22ccc-9991-49a1-8c44-41f271717507].url}}","label":"step➛Script step➛url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"929412b2-5239-4796-a79a-c33d92c57e59"}},{"name":"{{step[c56e5f40-98c1-4e62-a838-cf86d50955a7].status_code}}","label":"step➛make REST call to ignore rules endpoint➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[c56e5f40-98c1-4e62-a838-cf86d50955a7].__step_status__.message}}","label":"step➛make REST call to ignore rules endpoint➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[c56e5f40-98c1-4e62-a838-cf86d50955a7].__step_status__.code}}","label":"step➛make REST call to ignore rules endpoint➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].variable}}","label":"step➛create policy update model➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model}}","label":"step➛create policy update model➛policy_update_model","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.policy_update_model_child1}}","label":"step➛create policy update model➛policy_update_model➛policy_update_model_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.policy_name}}","label":"step➛create policy update model➛policy_update_model➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.policy_update_model_child2}}","label":"step➛create policy update model➛policy_update_model➛policy_update_model_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.description}}","label":"step➛create policy update model➛policy_update_model➛description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.type}}","label":"step➛create policy update model➛policy_update_model➛type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.Type}}","label":"step➛create policy update model➛policy_update_model➛Type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.policy_update_model_child4}}","label":"step➛create policy update model➛policy_update_model➛policy_update_model_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules}}","label":"step➛create policy update model➛policy_update_model➛rules","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule_name}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule_name","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.rule_child1}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛rule_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.rule_name}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛rule_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.rule_child2}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛rule_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.criteria}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛criteria","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.criteria.criteria_child1}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛criteria➛criteria_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.criteria.min_severity}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛criteria➛min_severity","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.rule_child3}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛rule_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.priority}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛priority","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.rule_child4}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛rule_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.action}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛action","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.actions}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛actions","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.actions.actions_child1}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛actions➛actions_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.actions.webhooks}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛actions➛webhooks","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.actions.webhooks.webhook}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛actions➛webhooks➛webhook","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.policy_type}}","label":"step➛create policy update model➛policy_update_model➛policy_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.name}}","label":"step➛create policy update model➛policy_update_model➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[9586f4a0-b816-4dfe-9b85-a0069fe09cf9].policy_update_model.rules.rule.name}}","label":"step➛create policy update model➛policy_update_model➛rules➛rule➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].variable}}","label":"step➛Create Payload➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload}}","label":"step➛Create Payload➛user_payload","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child1}}","label":"step➛Create Payload➛user_payload➛user_payload_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.is_admin}}","label":"step➛Create Payload➛user_payload➛is_admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child2}}","label":"step➛Create Payload➛user_payload➛user_payload_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.email}}","label":"step➛Create Payload➛user_payload➛email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child3}}","label":"step➛Create Payload➛user_payload➛user_payload_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.name}}","label":"step➛Create Payload➛user_payload➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.user_payload_child4}}","label":"step➛Create Payload➛user_payload➛user_payload_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.password}}","label":"step➛Create Payload➛user_payload➛password","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[34778889-396b-404c-9b20-3f465a7f2b25].user_payload.admin}}","label":"step➛Create Payload➛user_payload➛admin","type":"step","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].variable}}","label":"step➛Create Webhook Payload➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model}}","label":"step➛Create Webhook Payload➛webhook-model","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.webhook_model_child1}}","label":"step➛Create Webhook Payload➛webhook-model➛webhook-model_child1","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.name}}","label":"step➛Create Webhook Payload➛webhook-model➛name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.webhook_model_child2}}","label":"step➛Create Webhook Payload➛webhook-model➛webhook-model_child2","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.description}}","label":"step➛Create Webhook Payload➛webhook-model➛description","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.webhook_model_child3}}","label":"step➛Create Webhook Payload➛webhook-model➛webhook-model_child3","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.url}}","label":"step➛Create Webhook Payload➛webhook-model➛url","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.webhook_model_child4}}","label":"step➛Create Webhook Payload➛webhook-model➛webhook-model_child4","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4b544b28-be4a-46cb-96f6-14452c79288b].webhook_model.headers}}","label":"step➛Create Webhook Payload➛webhook-model➛headers","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Generate Violations Report</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:35:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30c1958587d2c510548899b73cbb356e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Generate Violations Report</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_30c1958587d2c510548899b73cbb356e</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=30c1958587d2c510548899b73cbb356e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=30c1958587d2c510548899b73cbb356e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>30c1958587d2c510548899b73cbb356e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>34fd1d4d87d2c510548899b73cbb353e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">fcfd1d4d87d2c510548899b73cbb3526</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>30c1958587d2c510548899b73cbb356e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>38fd1d4d87d2c510548899b73cbb353e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD6cfd1d4d7dd2c51059c9896722160e11":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD6cfd1d4d7dd2c51059c9896722160e11.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"46d0e53c-e294-4865-b4ee-161e820f0595\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD6cfd1d4d7dd2c51059c9896722160e11\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"-1\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">20fd1d4d87d2c510548899b73cbb3514</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e^id=30c1958587d2c510548899b73cbb356e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=30c1958587d2c510548899b73cbb356e^sys_idNOT IN1b5359c587d2c510548899b73cbb359f,6f5359c587d2c510548899b73cbb35a5,a4fdd94d87d2c510548899b73cbb35fb,acfd1d4d87d2c510548899b73cbb3509,e8fd1d4d87d2c510548899b73cbb3503"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=041b7591-024a-42fd-b9f7-282f85931fd2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:30</sys_created_on>
+        <sys_id>1b5359c587d2c510548899b73cbb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 00:42:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Repository,child_name=Repository,child_type=object,child_type_label=Object,child_uiUniqueId=0dc4704b-0905-4039-9638-e7c52ed8e59d,co_type_name=FD54fd594d20d2c5103b49c0ab898fe9c8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>repositories</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Repositories</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:31</sys_created_on>
+        <sys_id>6f5359c587d2c510548899b73cbb35a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Name,child_name=Name,child_type=string,child_type_label=String,child_uiUniqueId=fb94b376-2eb4-4ed9-af07-9e5038c4d266,co_type_name=FD94fd594d07d2c510f772a8acb8d421cb,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=18f37f6a-5927-4ca3-a9f3-d197cc57bbb9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>build_names</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Build Names</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:43</sys_created_on>
+        <sys_id>a4fdd94d87d2c510548899b73cbb35fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9e5bb898-8b3c-436b-b12e-faed3b2484b9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>acfd1d4d87d2c510548899b73cbb3509</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=include_pattern,child_name=include_pattern,child_type=string,child_type_label=String,child_uiUniqueId=2f13e329-47de-4a46-9eac-b46a6ae63a5d,co_type_name=FD18fdd94d88d2c5101bead230b82769f0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=3f54ccdb-5f65-474b-ade1-16478c777021</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Builds_Include_Patterns</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Builds Include Patterns</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>e8fd1d4d87d2c510548899b73cbb3503</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=30c1958587d2c510548899b73cbb356e^sys_idNOT IN20fd1d4d87d2c510548899b73cbb3514,fcfd1d4d87d2c510548899b73cbb3526"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD6cfd1d4d7dd2c51059c9896722160e11,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=46d0e53c-e294-4865-b4ee-161e820f0595</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>20fd1d4d87d2c510548899b73cbb3514</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=92467649-741b-442b-b541-7644d57e71ea,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</model>
+        <model_id>30c1958587d2c510548899b73cbb356e</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>fcfd1d4d87d2c510548899b73cbb3526</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=30c1958587d2c510548899b73cbb356e^sys_idNOT INbb5359c587d2c510548899b73cbb35f9"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Generate Violations Report">30c1958587d2c510548899b73cbb356e</action_type_id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:31</sys_created_on>
+        <sys_id>bb5359c587d2c510548899b73cbb35f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 00:42:31</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e^sys_idNOT IN28fd1d4d87d2c510548899b73cbb3508,64fd1d4d87d2c510548899b73cbb3502,64fd1d4d87d2c510548899b73cbb350e,e35359c587d2c510548899b73cbb35f5,e75359c587d2c510548899b73cbb35a4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>Builds_Include_Patterns</element>
+        <help/>
+        <hint>Enter the regex patterns for builds you want to include.</hint>
+        <label>Builds Include Patterns</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>28fd1d4d87d2c510548899b73cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>build_names</element>
+        <help/>
+        <hint>Enter the build names you wish to generate a report on.</hint>
+        <label>Build Names</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>64fd1d4d87d2c510548899b73cbb3502</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>variable</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>64fd1d4d87d2c510548899b73cbb350e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>repositories</element>
+        <help/>
+        <hint>Enter the repositories you wish to generate a report on</hint>
+        <label>Repositories</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:31</sys_created_on>
+        <sys_id>e35359c587d2c510548899b73cbb35f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:31</sys_created_on>
+        <sys_id>e75359c587d2c510548899b73cbb35a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 00:42:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e^sys_idNOT IN78fd1d4d87d2c510548899b73cbb3525,78fd1d4d87d2c510548899b73cbb352e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>78fd1d4d87d2c510548899b73cbb3525</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_30c1958587d2c510548899b73cbb356e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 01:28:44</sys_created_on>
+        <sys_id>78fd1d4d87d2c510548899b73cbb352e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 01:28:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

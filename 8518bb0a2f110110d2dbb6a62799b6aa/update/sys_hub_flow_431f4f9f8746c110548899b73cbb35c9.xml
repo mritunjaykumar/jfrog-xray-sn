@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Test flow for triggers</description>
+        <internal_name>sushtest</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>sush-test</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-10 23:13:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>431f4f9f8746c110548899b73cbb35c9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sush-test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_hub_flow_431f4f9f8746c110548899b73cbb35c9</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-10 23:13:48</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=431f4f9f8746c110548899b73cbb35c9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=431f4f9f8746c110548899b73cbb35c9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=431f4f9f8746c110548899b73cbb35c9^sys_idNOT IN9b1f4f9f8746c110548899b73cbb35cb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>431f4f9f8746c110548899b73cbb35c9</id>
+        <name>sush-test</name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-10 23:13:47</sys_created_on>
+        <sys_id>9b1f4f9f8746c110548899b73cbb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-10 23:13:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>
