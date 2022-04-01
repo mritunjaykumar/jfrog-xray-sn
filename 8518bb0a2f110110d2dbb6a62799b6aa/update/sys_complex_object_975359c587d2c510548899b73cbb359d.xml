@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd35359c55ad2c5107e6ec6f6a2dbba9d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FDd35359c55ad2c5107e6ec6f6a2dbba9d":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd35359c55ad2c5107e6ec6f6a2dbba9d.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Repositories\",\"mandatory\":\"true\",\"child_name\":\"Repositories_child0\",\"uiUniqueId\":\"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDd35359c55ad2c5107e6ec6f6a2dbba9d\",\"child_label\":\"Repositories_child0\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"30ca730b-39be-4240-b842-7bdfe81b3612\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-16 00:42:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>975359c587d2c510548899b73cbb359d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDd35359c55ad2c5107e6ec6f6a2dbba9d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_975359c587d2c510548899b73cbb359d</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-16 00:42:30</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

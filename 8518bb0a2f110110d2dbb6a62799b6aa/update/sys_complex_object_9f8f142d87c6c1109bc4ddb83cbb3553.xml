@@ -4,14 +4,14 @@
         <name>FDd38f142d80c6c1107bf949f609a18753</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
-        <serialized_content>{"FlowDesigner:FDd38f142d80c6c1107bf949f609a18753":{},"FlowDesigner:FDd38f142d80c6c1107bf949f609a18753.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd38f142d80c6c1107bf949f609a18753\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Path Parameters\",\"mandatory\":\"false\",\"order\":\"120\",\"max_length\":\"1024\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDd38f142d80c6c1107bf949f609a18753":{},"FlowDesigner:FDd38f142d80c6c1107bf949f609a18753.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd38f142d80c6c1107bf949f609a18753\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Path Parameters\",\"mandatory\":\"false\",\"order\":\"120\",\"max_length\":\"1024\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>Jay</sys_created_by>
         <sys_created_on>2022-03-04 23:57:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9f8f142d87c6c1109bc4ddb83cbb3553</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>FDd38f142d80c6c1107bf949f609a18753</sys_name>
         <sys_overrides/>
         <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
@@ -19,7 +19,7 @@
         <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
         <sys_update_name>sys_complex_object_9f8f142d87c6c1109bc4ddb83cbb3553</sys_update_name>
         <sys_updated_by>Jay</sys_updated_by>
-        <sys_updated_on>2022-03-04 23:57:23</sys_updated_on>
+        <sys_updated_on>2022-03-11 22:13:47</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
 </record_update>
