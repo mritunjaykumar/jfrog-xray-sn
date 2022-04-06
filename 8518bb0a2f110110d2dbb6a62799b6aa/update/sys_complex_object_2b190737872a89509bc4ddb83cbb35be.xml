@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD67190737942a89501731ac28d86177be</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD67190737942a89501731ac28d86177be":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD67190737942a89501731ac28d86177be.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"checksums\",\"mandatory\":\"false\",\"child_name\":\"checksum\",\"uiUniqueId\":\"8dd987a5-9e55-45a1-8b41-cef75a640a03\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD67190737942a89501731ac28d86177be\",\"child_label\":\"checksum\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cba932d6-2b72-4f39-a717-cb99ee9c73c2\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Jay</sys_created_by>
+        <sys_created_on>2022-04-06 08:35:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b190737872a89509bc4ddb83cbb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD67190737942a89501731ac28d86177be</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_2b190737872a89509bc4ddb83cbb35be</sys_update_name>
+        <sys_updated_by>Jay</sys_updated_by>
+        <sys_updated_on>2022-04-06 08:35:57</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
