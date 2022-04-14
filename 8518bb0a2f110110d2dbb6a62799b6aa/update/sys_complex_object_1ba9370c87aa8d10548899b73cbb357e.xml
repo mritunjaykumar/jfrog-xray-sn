@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD57a9370cf2aa8d10776a311f6404777e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD57a9370cf2aa8d10776a311f6404777e":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD57a9370cf2aa8d10776a311f6404777e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Policy Names\",\"mandatory\":\"false\",\"child_name\":\"policy_name\",\"uiUniqueId\":\"1a511fa2-433b-4532-b193-04a0d2dfc8d7\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD57a9370cf2aa8d10776a311f6404777e\",\"child_label\":\"Policy Name\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"8\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7cee8d35-4009-4721-9e98-8178bbe811be\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-03-25 20:30:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ba9370c87aa8d10548899b73cbb357e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD57a9370cf2aa8d10776a311f6404777e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_1ba9370c87aa8d10548899b73cbb357e</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-03-29 21:28:43</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>
