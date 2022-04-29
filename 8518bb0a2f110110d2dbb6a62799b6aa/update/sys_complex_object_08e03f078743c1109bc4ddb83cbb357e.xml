@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD44e03f07a543c1104392a6fc5c8b957e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>8518bb0a2f110110d2dbb6a62799b6aa</scope_name>
+        <serialized_content>{"FlowDesigner:FD44e03f07a543c1104392a6fc5c8b957e":{"repositories":["Any"],"repositories.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"repositories\",\"mandatory\":\"false\",\"child_name\":\"repository\",\"uiUniqueId\":\"4b7823fb-4dc0-480d-bbd7-e6bd723c607b\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"repository\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"86a172d2-f429-4554-ae05-352e8e72b6de\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"default_value\":null,\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3bf67c34-5892-4158-8377-43f4733d6185\"}"}},"FlowDesigner:FD44e03f07a543c1104392a6fc5c8b957e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"violation_report\",\"mandatory\":\"false\",\"uiUniqueId\":\"d6b76326-64fb-4de0-98aa-bd700089691d\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD44e03f07a543c1104392a6fc5c8b957e\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 00:05:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08e03f078743c1109bc4ddb83cbb357e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD44e03f07a543c1104392a6fc5c8b957e</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_complex_object_08e03f078743c1109bc4ddb83cbb357e</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 00:05:37</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

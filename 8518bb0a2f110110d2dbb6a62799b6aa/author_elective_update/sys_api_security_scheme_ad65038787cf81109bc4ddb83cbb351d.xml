@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_security_scheme">
+    <sys_api_security_scheme action="DELETE">
+        <allow_external_access>false</allow_external_access>
+        <api_collection display_value="Rest trigger for flow id=1bc45770870309109bc4ddb83cbb355c - v1">6e466ebe87030510548899b73cbb3564</api_collection>
+        <enforce_acl/>
+        <requires_authentication>true</requires_authentication>
+        <sys_class_name>sys_api_security_scheme</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-28 20:55:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>ad65038787cf81109bc4ddb83cbb351d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_api_security_scheme_ad65038787cf81109bc4ddb83cbb351d</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-28 20:55:39</sys_updated_on>
+    </sys_api_security_scheme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</application>
+        <file_path/>
+        <instance_id>071f0380dbc20110b847ac44d4961989</instance_id>
+        <instance_name>jfrogshare</instance_name>
+        <name>sys_api_security_scheme_ad65038787cf81109bc4ddb83cbb351d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_api_security_scheme"><sys_api_security_scheme action="INSERT_OR_UPDATE"><allow_external_access>false</allow_external_access><api_collection display_value="Rest trigger for flow id=1bc45770870309109bc4ddb83cbb355c - v1">6e466ebe87030510548899b73cbb3564</api_collection><enforce_acl/><requires_authentication>true</requires_authentication><sys_class_name>sys_api_security_scheme</sys_class_name><sys_created_by>sushruta</sys_created_by><sys_created_on>2022-04-28 20:55:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>ad65038787cf81109bc4ddb83cbb351d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package><sys_policy/><sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope><sys_update_name>sys_api_security_scheme_ad65038787cf81109bc4ddb83cbb351d</sys_update_name><sys_updated_by>sushruta</sys_updated_by><sys_updated_on>2022-04-28 20:55:39</sys_updated_on></sys_api_security_scheme></record_update>]]></payload>
+        <payload_hash>1139441592</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>80c9f7d687424110548899b73cbb3526</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-28 20:55:39</sys_created_on>
+        <sys_id>ad65038787cf81109bc4ddb83cbb351f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18071f5403e0000001</sys_recorded_at>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-28 20:55:39</sys_updated_on>
+        <type>API Security Scheme</type>
+        <update_guid>e5650387bccf81109638093b68e2381f</update_guid>
+        <update_guid_history>e5650387bccf81109638093b68e2381f:1139441592</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-28 21:01:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_api_security_scheme">sys_api_security_scheme</sys_db_object>
+        <sys_id>064dce5373ab44888843dad0a9368440</sys_id>
+        <sys_metadata>ad65038787cf81109bc4ddb83cbb351d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_scope_delete display_value="">03017db5537a41e08009141b04113031</sys_scope_delete>
+        <sys_update_name>sys_api_security_scheme_ad65038787cf81109bc4ddb83cbb351d</sys_update_name>
+        <sys_update_version display_value="sys_api_security_scheme_ad65038787cf81109bc4ddb83cbb351d">ad65038787cf81109bc4ddb83cbb351f</sys_update_version>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-28 21:01:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch7a-03-08-2022_04-05-2022_2202.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>spoke_demo_final</internal_name>
+        <label_cache>[{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc000d09a3451011058d4c5f1ff2fc74e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"25d51711-105e-46cf-903c-ea09e5ce540b"}},{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"eed2ed63-ff86-4127-b6e1-ee61ca74ba8e"}},{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.violation_records","label":"1➛violation records","reference_display":"violation records","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8961fd63-3626-4996-8cd0-f755317a05b7","child_name":"violation_record","uiUniqueId":"9e2f90f3-25aa-40ce-83fa-99cdefa00506","uiTypeLabel":"Array.Object","co_type_name":"FDc000d09a75510110c15325d201366a50","child_label":"violation record","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"08ed8f86-bbde-441a-9455-63a6b1b94fd2","uiType":"array.object","child_type":"object","child_uiUniqueId":"8ab20945-d53e-4b80-bf53-4e39fa49168f"}},{"name":"REST API - Asynchronous_1.body","label":"Trigger➛Request Body","type":"object","base_type":"object","attributes":{}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item","label":"2➛violation record","reference_display":"violation record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity","label":"2➛violation record➛severity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7a9a1adc-9fcc-449a-982b-49593bdc1957.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD66c8b78be343c1103bb4f411d935efed","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7b1d11e2-eb5e-4bbe-8ff6-31a726813af4"}},{"name":"7a9a1adc-9fcc-449a-982b-49593bdc1957.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"e97072e6-1969-47b3-a560-a8e4e4ccecd4"}},{"name":"539249ad-d3d2-4ea5-ab17-3488cf149a69.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDa617b34bad43c110c9724df8b8fbee3c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"46d0e53c-e294-4865-b4ee-161e820f0595"}},{"name":"539249ad-d3d2-4ea5-ab17-3488cf149a69.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"92467649-741b-442b-b541-7644d57e71ea"}},{"name":"094c4687-c598-4acf-881a-1869a144c47e.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDde7ed70e84228550085747c9308bd2ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"0597f435-ec8e-4f70-9cc1-28765609c93b"}},{"name":"094c4687-c598-4acf-881a-1869a144c47e.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"074fe106-862d-4c63-9e3d-22b807dae0ec"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf872241abd910110166a30c762851c7c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"2faeccc2-7664-41a6-a9b0-192c1ae73357"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"077eaaf5-69da-4bf5-a70d-5f7f762ad86e"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.ignore_rules_resp_status_code","label":"8➛ignore_rules_resp_status_code","reference_display":"ignore_rules_resp_status_code","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a8867b64-39dc-44c6-9a6c-ab9485ba2f41"}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.cve","label":"2➛violation record➛cve","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master_snapshot>120518e7874fc1109bc4ddb83cbb356f</master_snapshot>
+        <name>Spoke_Demo_Final</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>001598e7874fc1109bc4ddb83cbb35f8</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:13:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5135c67874fc1109bc4ddb83cbb3540</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Spoke_Demo_Final</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name>sys_hub_flow_b5135c67874fc1109bc4ddb83cbb3540</sys_update_name>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:55</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b5135c67874fc1109bc4ddb83cbb3540"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b5135c67874fc1109bc4ddb83cbb3540"/>
+    <sys_rest_api_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_operation display_value="POST /">4c1598e7874fc1109bc4ddb83cbb35ec</api_operation>
+        <name/>
+        <roles_acl/>
+        <sys_class_name>sys_rest_api_trigger</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>001598e7874fc1109bc4ddb83cbb35f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:53</sys_updated_on>
+    </sys_rest_api_trigger>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT IN7df454e7874fc1109bc4ddb83cbb3553"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>7df454e7874fc1109bc4ddb83cbb3553</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:54</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7df454e7874fc1109bc4ddb83cbb3553"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7df454e7874fc1109bc4ddb83cbb3553</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>79f454e7874fc1109bc4ddb83cbb3555</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <value>/api/x_737142_jfrog_x_0/spoke_demo_final</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7df454e7874fc1109bc4ddb83cbb3553</document_key>
+        <order>112</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>b5f454e7874fc1109bc4ddb83cbb3555</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Requires Authentication">2e397f5b0ffe1010b303f140ff767e36</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7df454e7874fc1109bc4ddb83cbb3553</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>fdf454e7874fc1109bc4ddb83cbb3554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=7df454e7874fc1109bc4ddb83cbb3553"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=7df454e7874fc1109bc4ddb83cbb3553"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT IN7d135c67874fc1109bc4ddb83cbb3542"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b5135c67874fc1109bc4ddb83cbb3540</id>
+        <name>Spoke_Demo_Final</name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:13:35</sys_created_on>
+        <sys_id>7d135c67874fc1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:13:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT INe1f454e7874fc1109bc4ddb83cbb353c,f5f454e7874fc1109bc4ddb83cbb3542,f5f454e7874fc1109bc4ddb83cbb3547,f5f454e7874fc1109bc4ddb83cbb354c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDe9f454e74a4fc110e7dfb3d2b6020834,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</model>
+        <model_id>b5135c67874fc1109bc4ddb83cbb3540</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>e1f454e7874fc1109bc4ddb83cbb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD6df454e76e4fc11094e86e0994263b36,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</model>
+        <model_id>b5135c67874fc1109bc4ddb83cbb3540</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>f5f454e7874fc1109bc4ddb83cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD29f454e7734fc110c44db130a1f84438,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</model>
+        <model_id>b5135c67874fc1109bc4ddb83cbb3540</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>f5f454e7874fc1109bc4ddb83cbb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDe1f454e7664fc1102df5bcb8d70e4d3a,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</model>
+        <model_id>b5135c67874fc1109bc4ddb83cbb3540</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>f5f454e7874fc1109bc4ddb83cbb354c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT IN02f454e7874fc1109bc4ddb83cbb3574,42f454e7874fc1109bc4ddb83cbb3594,46f454e7874fc1109bc4ddb83cbb35a7,b9f454e7874fc1109bc4ddb83cbb355c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Jfrog Xray Generate Violations Report">da17734b8743c1109bc4ddb83cbb35f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>da17734b8743c1109bc4ddb83cbb35f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <order>4</order>
+        <parent_ui_id>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>02f454e7874fc1109bc4ddb83cbb3574</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <ui_id>539249ad-d3d2-4ea5-ab17-3488cf149a69</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=02f454e7874fc1109bc4ddb83cbb3574"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>02f454e7874fc1109bc4ddb83cbb3574</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>8ef454e7874fc1109bc4ddb83cbb3575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>Flow_Test</value>
+        <variable display_value="Name">1a17734b8743c1109bc4ddb83cbb35f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>02f454e7874fc1109bc4ddb83cbb3574</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>caf454e7874fc1109bc4ddb83cbb3575</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD1a17734bf543c110a4e100e85dd34af4":{"$COCollectionField":[{"Repository":{"include_path_patterns":["Any"],"include_path_patterns.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Include Path Patterns\",\"mandatory\":\"false\",\"child_name\":\"path\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Path\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"9d755388-f23d-44b9-b3d0-418052662dc3\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"exclude_path_patterns":["Any"],"exclude_path_patterns.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Exclude Path Patterns\",\"mandatory\":\"false\",\"child_name\":\"path\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Path\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"7cb5d3a2-e11e-4db8-b3e1-279cd1c5f729\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Repositories\",\"mandatory\":\"true\",\"child_name\":\"Repository\",\"uiUniqueId\":\"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1a17734bf543c110a4e100e85dd34af4\",\"child_label\":\"Repository\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0dc4704b-0905-4039-9638-e7c52ed8e59d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1a17734bf543c110a4e100e85dd34af4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Repositories\",\"mandatory\":\"true\",\"child_name\":\"Repository\",\"uiUniqueId\":\"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1a17734bf543c110a4e100e85dd34af4\",\"child_label\":\"Repository\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0dc4704b-0905-4039-9638-e7c52ed8e59d\"}"}},"complexObject":{"name$":"FD1a17734bf543c110a4e100e85dd34af4","$COCollectionField":[{"include_path_patterns":[""],"name":{"$cv":{"$c":"java.lang.String","$v":"demo2-go-local"}},"exclude_path_patterns":[""]}]},"serializationFormat":"JSON"}</value>
+        <variable display_value="Repositories">da17734b8743c1109bc4ddb83cbb35fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_da17734b8743c1109bc4ddb83cbb35f1^id=02f454e7874fc1109bc4ddb83cbb3574"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="JFrog Artifactory Set Item Properties">527ed70e872285509bc4ddb83cbb35a7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>527ed70e872285509bc4ddb83cbb35a7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <order>6</order>
+        <parent_ui_id>6e566c7a-b744-4b61-98c0-6219e152f5c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>42f454e7874fc1109bc4ddb83cbb3594</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <ui_id>094c4687-c598-4acf-881a-1869a144c47e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42f454e7874fc1109bc4ddb83cbb3594"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42f454e7874fc1109bc4ddb83cbb3594</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>4af454e7874fc1109bc4ddb83cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>goApp.zip</value>
+        <variable display_value="Item Path">de7ed70e872285509bc4ddb83cbb35b1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42f454e7874fc1109bc4ddb83cbb3594</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>86f454e7874fc1109bc4ddb83cbb3596</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD1e7ed70e16228550c90c05ad146bc6a9":{"$COCollectionField":[{"Properties_child0":{"values":["Any"],"values.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"values\",\"mandatory\":\"true\",\"child_name\":\"value\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"value\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6a142127-dbf0-4aa2-b776-1f40311cf894\"}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"key\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Properties\",\"mandatory\":\"true\",\"child_name\":\"Properties_child0\",\"uiUniqueId\":\"ce103f0f-e352-462c-a0f1-d0845be3fa2b\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7ed70e16228550c90c05ad146bc6a9\",\"child_label\":\"property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"fb9cb88a-69b2-48ce-9f75-97eecfb3b9d8\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1e7ed70e16228550c90c05ad146bc6a9.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Properties\",\"mandatory\":\"true\",\"child_name\":\"Properties_child0\",\"uiUniqueId\":\"ce103f0f-e352-462c-a0f1-d0845be3fa2b\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7ed70e16228550c90c05ad146bc6a9\",\"child_label\":\"property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"fb9cb88a-69b2-48ce-9f75-97eecfb3b9d8\"}"}},"complexObject":{"name$":"FD1e7ed70e16228550c90c05ad146bc6a9","$COCollectionField":[{"values":["test_flow"],"key":{"$cv":{"$c":"java.lang.String","$v":"service_test"}}}]},"serializationFormat":"JSON"}</value>
+        <variable display_value="Properties">5a7ed70e872285509bc4ddb83cbb35b7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42f454e7874fc1109bc4ddb83cbb3594</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>c2f454e7874fc1109bc4ddb83cbb3596</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>demo2-go-local</value>
+        <variable display_value="Repository Key">1e7ed70e872285509bc4ddb83cbb35ab</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_527ed70e872285509bc4ddb83cbb35a7^id=42f454e7874fc1109bc4ddb83cbb3594"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray Create Ignore Rules">d872241a2f910110d2dbb6a62799b61e</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>d872241a2f910110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <order>8</order>
+        <parent_ui_id>ac816516-2145-426d-8cc7-6a10d5c7c2bf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:48</sys_created_on>
+        <sys_id>46f454e7874fc1109bc4ddb83cbb35a7</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <ui_id>2479bd4c-6ae2-4483-83d2-c5a215485ea7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=46f454e7874fc1109bc4ddb83cbb35a7"/>
+    <sys_element_mapping action="delete_multiple" query="id=46f454e7874fc1109bc4ddb83cbb35a7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cve</field>
+        <id>46f454e7874fc1109bc4ddb83cbb35a7</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:48</sys_created_on>
+        <sys_id>4af454e7874fc1109bc4ddb83cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.cve}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Jfrog Create Violation Record">77ffc09a2f510110d2dbb6a62799b629</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>77ffc09a2f510110d2dbb6a62799b629</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>b9f454e7874fc1109bc4ddb83cbb355c</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:29:17</sys_updated_on>
+        <ui_id>05c65ff7-cb39-4518-beb6-81fb05401035</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b9f454e7874fc1109bc4ddb83cbb355c"/>
+    <sys_element_mapping action="delete_multiple" query="id=b9f454e7874fc1109bc4ddb83cbb355c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation_payload</field>
+        <id>b9f454e7874fc1109bc4ddb83cbb355c</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>75f454e7874fc1109bc4ddb83cbb355e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77ffc09a2f510110d2dbb6a62799b629</table>
+        <value>{{REST API - Asynchronous_1.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT IN75f454e7874fc1109bc4ddb83cbb355f,82f454e7874fc1109bc4ddb83cbb3597,b1f454e7874fc1109bc4ddb83cbb3563,c6f454e7874fc1109bc4ddb83cbb3576"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bdf454e7874fc1109bc4ddb83cbb355e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>75f454e7874fc1109bc4ddb83cbb355f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:54</sys_updated_on>
+        <ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=75f454e7874fc1109bc4ddb83cbb355f"/>
+    <sys_element_mapping action="delete_multiple" query="id=75f454e7874fc1109bc4ddb83cbb355f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>75f454e7874fc1109bc4ddb83cbb355f</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>39f454e7874fc1109bc4ddb83cbb3562</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{05c65ff7-cb39-4518-beb6-81fb05401035.violation_records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cef454e7874fc1109bc4ddb83cbb3596</block>
+        <comment/>
+        <connected_to>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>82f454e7874fc1109bc4ddb83cbb3597</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:54</sys_updated_on>
+        <ui_id>ac816516-2145-426d-8cc7-6a10d5c7c2bf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=82f454e7874fc1109bc4ddb83cbb3597"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>82f454e7874fc1109bc4ddb83cbb3597</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>02f454e7874fc1109bc4ddb83cbb359a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>Low Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=82f454e7874fc1109bc4ddb83cbb3597"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>82f454e7874fc1109bc4ddb83cbb3597</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>8ef454e7874fc1109bc4ddb83cbb3599</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=low</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>82f454e7874fc1109bc4ddb83cbb3597</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>caf454e7874fc1109bc4ddb83cbb3599</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">fdf454e7874fc1109bc4ddb83cbb3562</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>b1f454e7874fc1109bc4ddb83cbb3563</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:54</sys_updated_on>
+        <ui_id>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b1f454e7874fc1109bc4ddb83cbb3563"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b1f454e7874fc1109bc4ddb83cbb3563</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>f5f454e7874fc1109bc4ddb83cbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>High Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b1f454e7874fc1109bc4ddb83cbb3563"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b1f454e7874fc1109bc4ddb83cbb3563</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>75f454e7874fc1109bc4ddb83cbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=high</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b1f454e7874fc1109bc4ddb83cbb3563</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>b1f454e7874fc1109bc4ddb83cbb3566</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06f454e7874fc1109bc4ddb83cbb3576</block>
+        <comment/>
+        <connected_to>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>c6f454e7874fc1109bc4ddb83cbb3576</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:54</sys_updated_on>
+        <ui_id>6e566c7a-b744-4b61-98c0-6219e152f5c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c6f454e7874fc1109bc4ddb83cbb3576"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c6f454e7874fc1109bc4ddb83cbb3576</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>0ef454e7874fc1109bc4ddb83cbb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <value>Medium Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6f454e7874fc1109bc4ddb83cbb3576"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c6f454e7874fc1109bc4ddb83cbb3576</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>8af454e7874fc1109bc4ddb83cbb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=medium</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c6f454e7874fc1109bc4ddb83cbb3576</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:47</sys_created_on>
+        <sys_id>c6f454e7874fc1109bc4ddb83cbb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:47</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT IN35f454e7874fc1109bc4ddb83cbb3546,35f454e7874fc1109bc4ddb83cbb354b,35f454e7874fc1109bc4ddb83cbb3550,f1f454e7874fc1109bc4ddb83cbb3541"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>35f454e7874fc1109bc4ddb83cbb3546</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>35f454e7874fc1109bc4ddb83cbb354b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>35f454e7874fc1109bc4ddb83cbb3550</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5135c67874fc1109bc4ddb83cbb3540</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:21:46</sys_created_on>
+        <sys_id>f1f454e7874fc1109bc4ddb83cbb3541</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:21:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b5135c67874fc1109bc4ddb83cbb3540^sys_idNOT INc41598e7874fc1109bc4ddb83cbb35f8"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c41598e7874fc1109bc4ddb83cbb35f8","name":"plan","plan_signature":null}}</plan>
+        <plan_id>b5135c67874fc1109bc4ddb83cbb3540</plan_id>
+        <snapshot>dfa61467870b4510548899b73cbb35b2</snapshot>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c41598e7874fc1109bc4ddb83cbb35f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:53</sys_updated_on>
+        <trigger display_value="">001598e7874fc1109bc4ddb83cbb35f8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>spoke_demo_final</internal_name>
+        <label_cache>[{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc000d09a3451011058d4c5f1ff2fc74e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"25d51711-105e-46cf-903c-ea09e5ce540b"}},{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"eed2ed63-ff86-4127-b6e1-ee61ca74ba8e"}},{"name":"05c65ff7-cb39-4518-beb6-81fb05401035.violation_records","label":"1➛violation records","reference_display":"violation records","type":"array.object","base_type":"array.object","attributes":{"sourceId":"8961fd63-3626-4996-8cd0-f755317a05b7","child_name":"violation_record","uiUniqueId":"9e2f90f3-25aa-40ce-83fa-99cdefa00506","uiTypeLabel":"Array.Object","co_type_name":"FDc000d09a75510110c15325d201366a50","child_label":"violation record","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"08ed8f86-bbde-441a-9455-63a6b1b94fd2","uiType":"array.object","child_type":"object","child_uiUniqueId":"8ab20945-d53e-4b80-bf53-4e39fa49168f"}},{"name":"REST API - Asynchronous_1.body","label":"Trigger➛Request Body","type":"object","base_type":"object","attributes":{}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item","label":"2➛violation record","reference_display":"violation record","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity","label":"2➛violation record➛severity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7a9a1adc-9fcc-449a-982b-49593bdc1957.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD66c8b78be343c1103bb4f411d935efed","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7b1d11e2-eb5e-4bbe-8ff6-31a726813af4"}},{"name":"7a9a1adc-9fcc-449a-982b-49593bdc1957.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"e97072e6-1969-47b3-a560-a8e4e4ccecd4"}},{"name":"539249ad-d3d2-4ea5-ab17-3488cf149a69.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDa617b34bad43c110c9724df8b8fbee3c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"46d0e53c-e294-4865-b4ee-161e820f0595"}},{"name":"539249ad-d3d2-4ea5-ab17-3488cf149a69.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"92467649-741b-442b-b541-7644d57e71ea"}},{"name":"094c4687-c598-4acf-881a-1869a144c47e.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDde7ed70e84228550085747c9308bd2ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"0597f435-ec8e-4f70-9cc1-28765609c93b"}},{"name":"094c4687-c598-4acf-881a-1869a144c47e.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"074fe106-862d-4c63-9e3d-22b807dae0ec"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.__action_status__","label":"8➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDf872241abd910110166a30c762851c7c","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"2faeccc2-7664-41a6-a9b0-192c1ae73357"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.__dont_treat_as_error__","label":"8➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"077eaaf5-69da-4bf5-a70d-5f7f762ad86e"}},{"name":"2479bd4c-6ae2-4483-83d2-c5a215485ea7.ignore_rules_resp_status_code","label":"8➛ignore_rules_resp_status_code","reference_display":"ignore_rules_resp_status_code","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a8867b64-39dc-44c6-9a6c-ab9485ba2f41"}},{"name":"fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.cve","label":"2➛violation record➛cve","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Spoke_Demo_Final</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Spoke_Demo_Final">b5135c67874fc1109bc4ddb83cbb3540</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>120518e7874fc1109bc4ddb83cbb356f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=120518e7874fc1109bc4ddb83cbb356f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=120518e7874fc1109bc4ddb83cbb356f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN320558e7874fc1109bc4ddb83cbb3527"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <name>REST API - Asynchronous</name>
+        <remote_sys_id/>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>320558e7874fc1109bc4ddb83cbb3527</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:53</sys_updated_on>
+        <trigger_definition display_value="REST API - Asynchronous">77ad0b76c71000101666868cb8c2601d</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>rest_async</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=320558e7874fc1109bc4ddb83cbb3527"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>320558e7874fc1109bc4ddb83cbb3527</document_key>
+        <order>112</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>3e0558e7874fc1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Requires Authentication">2e397f5b0ffe1010b303f140ff767e36</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>320558e7874fc1109bc4ddb83cbb3527</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>7a0558e7874fc1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">6b6fcc4bc71000101666868cb8c260a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>320558e7874fc1109bc4ddb83cbb3527</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>fe0558e7874fc1109bc4ddb83cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>/api/x_737142_jfrog_x_0/spoke_demo_final</value>
+        <variable display_value="Base Path">3af53c10c7531010bd2f868cb8c2608b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_77ad0b76c71000101666868cb8c2601d^id=320558e7874fc1109bc4ddb83cbb3527"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_77ad0b76c71000101666868cb8c2601d^id=320558e7874fc1109bc4ddb83cbb3527"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN5e0518e7874fc1109bc4ddb83cbb356f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>120518e7874fc1109bc4ddb83cbb356f</id>
+        <name>Spoke_Demo_Final</name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:04</sys_created_on>
+        <sys_id>5e0518e7874fc1109bc4ddb83cbb356f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:04</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN960518e7874fc1109bc4ddb83cbb35c4,9a0518e7874fc1109bc4ddb83cbb3577,9e0518e7874fc1109bc4ddb83cbb35ba,de0518e7874fc1109bc4ddb83cbb35cd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDde0518e7f74fc11071132c6607598973,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>headers</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Headers</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</model>
+        <model_id>120518e7874fc1109bc4ddb83cbb356f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <next_element/>
+        <order>140</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>960518e7874fc1109bc4ddb83cbb35c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD5a0518e7e04fc1102fe397d738c02870,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>path_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Path Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</model>
+        <model_id>120518e7874fc1109bc4ddb83cbb356f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <next_element/>
+        <order>120</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:04</sys_created_on>
+        <sys_id>9a0518e7874fc1109bc4ddb83cbb3577</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD160518e78c4fc1100bfbafc0cd992772,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>query_parameters</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Query Parameters</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</model>
+        <model_id>120518e7874fc1109bc4ddb83cbb356f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <next_element/>
+        <order>130</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>9e0518e7874fc1109bc4ddb83cbb35ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD9a0518e7ac4fc110f4ed0a8fe3af1f75,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Body</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</model>
+        <model_id>120518e7874fc1109bc4ddb83cbb356f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>de0518e7874fc1109bc4ddb83cbb35cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN320558e7874fc1109bc4ddb83cbb3526,660518e7874fc1109bc4ddb83cbb35f1,ae0558e7874fc1109bc4ddb83cbb3503,ee0558e7874fc1109bc4ddb83cbb3514"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="JFrog Xray Create Ignore Rules">d872241a2f910110d2dbb6a62799b61e</action_type>
+        <action_type_parent display_value="JFrog Xray Create Ignore Rules">3942d49a2f510110d2dbb6a62799b603</action_type_parent>
+        <comment/>
+        <compiled_snapshot>d872241a2f910110d2dbb6a62799b61e</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <order>8</order>
+        <parent_ui_id>ac816516-2145-426d-8cc7-6a10d5c7c2bf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>320558e7874fc1109bc4ddb83cbb3526</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>2479bd4c-6ae2-4483-83d2-c5a215485ea7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=320558e7874fc1109bc4ddb83cbb3526"/>
+    <sys_element_mapping action="delete_multiple" query="id=320558e7874fc1109bc4ddb83cbb3526"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cve</field>
+        <id>320558e7874fc1109bc4ddb83cbb3526</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>7e0558e7874fc1109bc4ddb83cbb3526</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d872241a2f910110d2dbb6a62799b61e</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.cve}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Jfrog Create Violation Record">77ffc09a2f510110d2dbb6a62799b629</action_type>
+        <action_type_parent display_value="Jfrog Create Violation Record">084d48d62f510110d2dbb6a62799b694</action_type_parent>
+        <comment/>
+        <compiled_snapshot>77ffc09a2f510110d2dbb6a62799b629</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>660518e7874fc1109bc4ddb83cbb35f1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>05c65ff7-cb39-4518-beb6-81fb05401035</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=660518e7874fc1109bc4ddb83cbb35f1"/>
+    <sys_element_mapping action="delete_multiple" query="id=660518e7874fc1109bc4ddb83cbb35f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>violation_payload</field>
+        <id>660518e7874fc1109bc4ddb83cbb35f1</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>a20518e7874fc1109bc4ddb83cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_77ffc09a2f510110d2dbb6a62799b629</table>
+        <value>{{REST API - Asynchronous_1.body}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Jfrog Xray Generate Violations Report">da17734b8743c1109bc4ddb83cbb35f1</action_type>
+        <action_type_parent display_value="Jfrog Xray Generate Violations Report">30c1958587d2c510548899b73cbb356e</action_type_parent>
+        <comment/>
+        <compiled_snapshot>da17734b8743c1109bc4ddb83cbb35f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <order>4</order>
+        <parent_ui_id>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>ae0558e7874fc1109bc4ddb83cbb3503</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>539249ad-d3d2-4ea5-ab17-3488cf149a69</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ae0558e7874fc1109bc4ddb83cbb3503"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ae0558e7874fc1109bc4ddb83cbb3503</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>660558e7874fc1109bc4ddb83cbb3505</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>Flow_Test</value>
+        <variable display_value="Name">1a17734b8743c1109bc4ddb83cbb35f6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ae0558e7874fc1109bc4ddb83cbb3503</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>a20558e7874fc1109bc4ddb83cbb3505</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"name$":"FD1a17734bf543c110a4e100e85dd34af4","$COCollectionField":[{"include_path_patterns":[""],"name":{"$cv":{"$c":"java.lang.String","$v":"demo2-go-local"}},"exclude_path_patterns":[""]}]},"complexObjectSchema":{"FlowDesigner:FD1a17734bf543c110a4e100e85dd34af4":{"$COCollectionField":[{"Repository":{"include_path_patterns":["Any"],"include_path_patterns.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Include Path Patterns\",\"mandatory\":\"false\",\"child_name\":\"path\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Path\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"9d755388-f23d-44b9-b3d0-418052662dc3\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"exclude_path_patterns":["Any"],"exclude_path_patterns.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Exclude Path Patterns\",\"mandatory\":\"false\",\"child_name\":\"path\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"Path\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"7cb5d3a2-e11e-4db8-b3e1-279cd1c5f729\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Repositories\",\"mandatory\":\"true\",\"child_name\":\"Repository\",\"uiUniqueId\":\"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1a17734bf543c110a4e100e85dd34af4\",\"child_label\":\"Repository\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0dc4704b-0905-4039-9638-e7c52ed8e59d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1a17734bf543c110a4e100e85dd34af4.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Repositories\",\"mandatory\":\"true\",\"child_name\":\"Repository\",\"uiUniqueId\":\"4d05c9f7-8e8d-4819-9d8d-3f2fa5e14545\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1a17734bf543c110a4e100e85dd34af4\",\"child_label\":\"Repository\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"0dc4704b-0905-4039-9638-e7c52ed8e59d\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Repositories">da17734b8743c1109bc4ddb83cbb35fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_da17734b8743c1109bc4ddb83cbb35f1^id=ae0558e7874fc1109bc4ddb83cbb3503"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="JFrog Artifactory Set Item Properties">527ed70e872285509bc4ddb83cbb35a7</action_type>
+        <action_type_parent display_value="JFrog Artifactory Set Item Properties">9cb3cf0a87ee45509bc4ddb83cbb35a6</action_type_parent>
+        <comment/>
+        <compiled_snapshot>527ed70e872285509bc4ddb83cbb35a7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <order>6</order>
+        <parent_ui_id>6e566c7a-b744-4b61-98c0-6219e152f5c4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>ee0558e7874fc1109bc4ddb83cbb3514</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>094c4687-c598-4acf-881a-1869a144c47e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee0558e7874fc1109bc4ddb83cbb3514"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee0558e7874fc1109bc4ddb83cbb3514</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>220558e7874fc1109bc4ddb83cbb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>goApp.zip</value>
+        <variable display_value="Item Path">de7ed70e872285509bc4ddb83cbb35b1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee0558e7874fc1109bc4ddb83cbb3514</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>6e0558e7874fc1109bc4ddb83cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"name$":"FD1e7ed70e16228550c90c05ad146bc6a9","$COCollectionField":[{"values":["test_flow"],"key":{"$cv":{"$c":"java.lang.String","$v":"service_test"}}}]},"complexObjectSchema":{"FlowDesigner:FD1e7ed70e16228550c90c05ad146bc6a9":{"$COCollectionField":[{"Properties_child0":{"values":["Any"],"values.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"values\",\"mandatory\":\"true\",\"child_name\":\"value\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"value\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"6a142127-dbf0-4aa2-b776-1f40311cf894\"}"},"key":"String","key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"key\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Properties\",\"mandatory\":\"true\",\"child_name\":\"Properties_child0\",\"uiUniqueId\":\"ce103f0f-e352-462c-a0f1-d0845be3fa2b\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7ed70e16228550c90c05ad146bc6a9\",\"child_label\":\"property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"fb9cb88a-69b2-48ce-9f75-97eecfb3b9d8\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1e7ed70e16228550c90c05ad146bc6a9.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Properties\",\"mandatory\":\"true\",\"child_name\":\"Properties_child0\",\"uiUniqueId\":\"ce103f0f-e352-462c-a0f1-d0845be3fa2b\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD1e7ed70e16228550c90c05ad146bc6a9\",\"child_label\":\"property\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"fb9cb88a-69b2-48ce-9f75-97eecfb3b9d8\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Properties">5a7ed70e872285509bc4ddb83cbb35b7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee0558e7874fc1109bc4ddb83cbb3514</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:06</sys_created_on>
+        <sys_id>aa0558e7874fc1109bc4ddb83cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:06</sys_updated_on>
+        <value>demo2-go-local</value>
+        <variable display_value="Repository Key">1e7ed70e872285509bc4ddb83cbb35ab</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_527ed70e872285509bc4ddb83cbb35a7^id=ee0558e7874fc1109bc4ddb83cbb3514"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN220518e7874fc1109bc4ddb83cbb35e6,660518e7874fc1109bc4ddb83cbb35e2,d20518e7874fc1109bc4ddb83cbb35db,da0518e7874fc1109bc4ddb83cbb35de"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cef454e7874fc1109bc4ddb83cbb3596</block>
+        <comment/>
+        <connected_to>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>220518e7874fc1109bc4ddb83cbb35e6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>ac816516-2145-426d-8cc7-6a10d5c7c2bf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=220518e7874fc1109bc4ddb83cbb35e6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>220518e7874fc1109bc4ddb83cbb35e6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>ae0518e7874fc1109bc4ddb83cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <value>Low Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=220518e7874fc1109bc4ddb83cbb35e6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>220518e7874fc1109bc4ddb83cbb35e6</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>2e0518e7874fc1109bc4ddb83cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=low</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>220518e7874fc1109bc4ddb83cbb35e6</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>6a0518e7874fc1109bc4ddb83cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">06f454e7874fc1109bc4ddb83cbb3576</block>
+        <comment/>
+        <connected_to>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>660518e7874fc1109bc4ddb83cbb35e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>6e566c7a-b744-4b61-98c0-6219e152f5c4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=660518e7874fc1109bc4ddb83cbb35e2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>660518e7874fc1109bc4ddb83cbb35e2</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>2a0518e7874fc1109bc4ddb83cbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <value>Medium Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=660518e7874fc1109bc4ddb83cbb35e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>660518e7874fc1109bc4ddb83cbb35e2</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>a60518e7874fc1109bc4ddb83cbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=medium</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>660518e7874fc1109bc4ddb83cbb35e2</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>e20518e7874fc1109bc4ddb83cbb35e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bdf454e7874fc1109bc4ddb83cbb355e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>d20518e7874fc1109bc4ddb83cbb35db</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d20518e7874fc1109bc4ddb83cbb35db"/>
+    <sys_element_mapping action="delete_multiple" query="id=d20518e7874fc1109bc4ddb83cbb35db"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>d20518e7874fc1109bc4ddb83cbb35db</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>160518e7874fc1109bc4ddb83cbb35de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{05c65ff7-cb39-4518-beb6-81fb05401035.violation_records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">fdf454e7874fc1109bc4ddb83cbb3562</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Spoke_Demo_Final">120518e7874fc1109bc4ddb83cbb356f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>fc84fd00-b738-4d69-ba9a-a9e6caeaafae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>da0518e7874fc1109bc4ddb83cbb35de</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:28:46</sys_updated_on>
+        <ui_id>03bd0c8c-7386-48d4-9225-e62b4fc8fe69</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=da0518e7874fc1109bc4ddb83cbb35de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>da0518e7874fc1109bc4ddb83cbb35de</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>6e0518e7874fc1109bc4ddb83cbb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <value>High Severity</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=da0518e7874fc1109bc4ddb83cbb35de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>da0518e7874fc1109bc4ddb83cbb35de</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>ea0518e7874fc1109bc4ddb83cbb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{fc84fd00-b738-4d69-ba9a-a9e6caeaafae.item.severity}}=high</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>da0518e7874fc1109bc4ddb83cbb35de</id>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>2a0518e7874fc1109bc4ddb83cbb35e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f^sys_idNOT IN1e0518e7874fc1109bc4ddb83cbb35d3,520518e7874fc1109bc4ddb83cbb35b7,5a0518e7874fc1109bc4ddb83cbb35c0,920518e7874fc1109bc4ddb83cbb35ca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body</element>
+        <help/>
+        <hint/>
+        <label>Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>1e0518e7874fc1109bc4ddb83cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>path_parameters</element>
+        <help/>
+        <hint/>
+        <label>Path Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>520518e7874fc1109bc4ddb83cbb35b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>query_parameters</element>
+        <help/>
+        <hint/>
+        <label>Query Parameters</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>5a0518e7874fc1109bc4ddb83cbb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>headers</element>
+        <help/>
+        <hint/>
+        <label>Headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_120518e7874fc1109bc4ddb83cbb356f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sushruta</sys_created_by>
+        <sys_created_on>2022-04-29 21:22:05</sys_created_on>
+        <sys_id>920518e7874fc1109bc4ddb83cbb35ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="JFrog Xray Spoke" source="x_737142_jfrog_x_0">8518bb0a2f110110d2dbb6a62799b6aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JFrog Xray Spoke">8518bb0a2f110110d2dbb6a62799b6aa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sushruta</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:22:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>b5135c67874fc1109bc4ddb83cbb3540</sys_id>
+        <latest_snapshot>120518e7874fc1109bc4ddb83cbb356f</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
