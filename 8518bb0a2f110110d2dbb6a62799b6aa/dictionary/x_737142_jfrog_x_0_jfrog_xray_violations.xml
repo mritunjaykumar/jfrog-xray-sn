@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="jfrog xray violations" max_length="40" name="x_737142_jfrog_x_0_jfrog_xray_violations" type="collection">
+    <element label="jfrog xray violations" max_length="40" name="x_737142_jfrog_x_0_jfrog_xray_violations" sizeclass="0" type="collection">
         <element label="Created on" max_length="40" name="created_on" type="string"/>
         <element label="CVE" max_length="40" name="cve" type="string"/>
         <element label="Impacted artifacts" max_length="4000" name="impacted_artifacts" type="string"/>
